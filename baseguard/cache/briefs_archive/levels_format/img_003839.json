@@ -1,0 +1,414 @@
+{
+ "image_id": "img_003839",
+ "brief": {
+  "brief": "Kare (13:25, üsse 1768 m kuzeyde) 12 tespit içeriyor; 4 hareket kaydı eşleşti. D6 yakın planda gerçek bir kırmızı kamyon olarak doğrulandı; R000'ın 'kamyon' iddiasıyla uyumlu. D7/T0115, R088'in bildirdiği uzun süreli hareketsiz otomobildir (120 dk duruş, T0182'nin ~57 m yanında). T0182, 11:25'te 7446 m uzaklıktan gelip 12:15'ten beri üsse 1771 m'de park ediyor. T0183 kareye yeni girdi (12:40'ta 7226 m → 13:25'te 1742 m) ve üsse doğru ilerliyor (ETA ~14 dk). Kuzey Yolu devriyesiyle telsiz bağlantısı 40+ dakikadır kesik (R076, R064); bu bölgedeki hareketlilik yakın izlenmeli.",
+  "headline": "Üsse ~1,7 km kuzeyde (Kuzey Yolu) üç kayda değer araç: T0183 üsse yaklaşıyor, T0182 uzaktan gelip park etti, T0115 uzun süredir hareketsiz; bölgede devriye telsiz iletişimi de kesik.",
+  "overall_level": "DİKKAT",
+  "reports": [
+   {
+    "assessment": "tespitle uyumlu",
+    "reason": "Koordinatta D3 (van, 0.73) ve D2 (car) var; kamyon sınıfı D6 (0.33) yakın plandan doğrulandı; büyük ölçüde tutarlı.",
+    "rid": "R000"
+   },
+   {
+    "assessment": "tespitle uyumlu",
+    "reason": "D7/T0115 noktada ve 120 dakikadır hareketsiz; R088 iddiasını doğruluyor.",
+    "rid": "R088"
+   },
+   {
+    "assessment": "doğrulanamaz",
+    "reason": "Devriyeyle temas kurulamıyor; görüntüde devriye ayırt edilemiyor.",
+    "rid": "R076"
+   },
+   {
+    "assessment": "doğrulanamaz",
+    "reason": "İhbar içeriği belirsiz, karede ayrıca doğrulanacak unsur yok.",
+    "rid": "R084"
+   },
+   {
+    "assessment": "doğrulanamaz",
+    "reason": "R076 ile aynı sorun; bağımsız teyit yok.",
+    "rid": "R064"
+   },
+   {
+    "assessment": "doğrulanamaz",
+    "reason": "İhbar içeriği belirsiz.",
+    "rid": "R071"
+   },
+   {
+    "assessment": "kısmen uyumlu",
+    "reason": "Trafik genel olarak akıyor ama T0182 parkı ve T0183 yaklaşımı gibi olağan dışı unsurlar da mevcut.",
+    "rid": "R098"
+   },
+   {
+    "assessment": "ilgisiz",
+    "reason": "Sabah saatine ait, mevcut durumla ilgisi yok.",
+    "rid": "R031"
+   }
+  ],
+  "uncertainties": [
+   "D9/D11/D12 düşük güvenli tespitler; D6'nın yanındaki kırmızı nesnelerle çakışıyor olabilir, ayrı araç olup olmadıkları belirsiz",
+   "R000'ın 'kamyon' bildirdiği koordinatta en güçlü tespit van (D3); sınıf uyuşmazlığı kısmen",
+   "T0183'ün niyeti belirsiz: normal geçiş mi, üsse yönelme mi ayrıştırılamadı"
+  ],
+  "vehicles": [
+   {
+    "evidence": [
+     "T0183: 12:40'ta 7226 m → 13:25'te 1742 m",
+     "kapanma hızı 2.09 m/s (30 dk)",
+     "D5 tespiti, conf 0.38",
+     "ETA 13.9 dk"
+    ],
+    "id": "D5",
+    "level": "DİKKAT",
+    "reason": "45 dakikada 7226 m'den 1742 m'ye gelip kareye girdi; hareket halinde ve üsse yöneliyor (bearing 170°, heading 133°), ETA ~14 dk.",
+    "track_id": "T0183"
+   },
+   {
+    "evidence": [
+     "T0182: 12:10'da 3297 m, 12:25'te 1773 m",
+     "12:15'ten beri 70 dk duruş",
+     "T0115 ile mean_sep 57 m"
+    ],
+    "id": "D2",
+    "level": "DİKKAT",
+    "reason": "Uzaktan (7.4 km) hızlı yaklaşan araç; 12:15'ten beri üsse 1771 m'de park halinde, T0115 ile beraber duruyor.",
+    "track_id": "T0182"
+   },
+   {
+    "evidence": [
+     "T0115: path_len 84 m, stopped 120 dk",
+     "R088 ile uyumlu"
+    ],
+    "id": "D7",
+    "level": "İZLE",
+    "reason": "120 dakikadır hareketsiz; R088 raporuyla birebir uyumlu. Yakın planda ağaç altında araç olarak görüldü.",
+    "track_id": "T0115"
+   },
+   {
+    "evidence": [
+     "D6 yakın plan: kırmızı kamyon",
+     "conf 0.33"
+    ],
+    "id": "D6",
+    "level": "NORMAL",
+    "reason": "Yakın planda kırmızı renkli gerçek bir kamyon (dumper tipi) olarak doğrulandı; yol kenarında duruyor, yük/örtü izi yok."
+   },
+   {
+    "evidence": [
+     "T0047: min 1753 m (12:55), şimdi 1758 m",
+     "heading_vs_base 135°"
+    ],
+    "id": "D1",
+    "level": "NORMAL",
+    "reason": "Bölgede dolaşıyor, üsse yaklaşmıyor (kapanma ~0); toplam 50 dk duraklama vardı.",
+    "track_id": "T0047"
+   }
+  ]
+ },
+ "trace": [
+  {
+   "kind": "user",
+   "title": "Görev",
+   "detail": "img_003839 karesini değerlendir.",
+   "t": 1790436177.017262
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_image_info",
+   "detail": {},
+   "t": 1790436185.800648
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_image_info",
+   "detail": "{\"image_id\": \"img_003839\", \"capture_time\": \"13:25\", \"width_px\": 960, \"height_px\": 540, \"corners\": {\"top_left\": [39.93778, 32.847904], \"top_right\": [39.93778, 32.849658], \"bottom_left\": [39.937024, 32.847904], \"bottom_right\": [39.937024, 32.849658]}, \"center\": [39.937402, 32.848781], \"footprint_m\": [150, 84], \"m_per_px\": 0.156, \"nearest_zone\": \"Kuzey Yolu\", \"zone_dist_m\": 1511, \"base\": {\"name\": \"Merkez Us\", \"lat\": 39.92184, \"lon\": 32.85306}, \"dist_to_base_m\": 1768, \"direction_from_base\": \"kuzey\"}",
+   "t": 1790436185.807764
+  },
+  {
+   "kind": "tool_call",
+   "title": "detect_vehicles",
+   "detail": {},
+   "t": 1790436185.808577
+  },
+  {
+   "kind": "tool_result",
+   "title": "detect_vehicles",
+   "detail": "{\"model\": \"full-blend (cached)\", \"min_conf\": 0.05, \"count\": 12, \"detections\": [{\"id\": \"D1\", \"cls\": \"car\", \"conf\": 0.9177, \"box_xywh\": [141.5, 368.9, 81.3, 79.1], \"center_px\": [182, 408], \"lat\": 39.937208, \"lon\": 32.848237, \"dist_to_base_m\": 1758}, {\"id\": \"D2\", \"cls\": \"car\", \"conf\": 0.8917, \"box_xywh\": [163.7, 275.6, 50.0, 32.1], \"center_px\": [189, 292], \"lat\": 39.937372, \"lon\": 32.848249, \"dist_to_base_m\": 1775}, {\"id\": \"D3\", \"cls\": \"van\", \"conf\": 0.733, \"box_xywh\": [197.7, 246.8, 52.5, 33.1], \"center_px\": [224, 263], \"lat\": 39.937411, \"lon\": 32.848313, \"dist_to_base_m\": 1778}, {\"id\": \"D4\", \"cls\": \"car\", \"conf\": 0.3989, \"box_xywh\": [288.6, 188.5, 23.9, 19.9], \"center_px\": [301, 198], \"lat\": 39.937502, \"lon\": 32.848453, \"dist_to_base_m\": 1785}, {\"id\": \"D5\", \"cls\": \"car\", \"conf\": 0.3845, \"box_xywh\": [773.3, 341.0, 77.2, 64.4], \"center_px\": [812, 373], \"lat\": 39.937258, \"lon\": 32.849387, \"dist_to_base_m\": 1743}, {\"id\": \"D6\", \"cls\": \"truck\", \"conf\": 0.3265, \"box_xywh\": [771.5, 433.7, 107.6, 105.5], \"center_px\": [825, 486], \"lat\": 39.937099, \"lon\": 32.849412, \"dist_to_base_m\": 1725}, {\"id\": \"D7\", \"cls\": \"car\", \"conf\": 0.2267, \"box_xywh\": [597.0, 249.8, 43.7, 35.1], \"center_px\": [619, 267], \"lat\": 39.937406, \"lon\": 32.849035, \"dist_to_base_m\": 1765}, {\"id\": \"D8\", \"cls\": \"car\", \"conf\": 0.1527, \"box_xywh\": [595.7, 237.9, 53.0, 46.7], \"center_px\": [622, 261], \"lat\": 39.937414, \"lon\": 32.849041, \"dist_to_base_m\": 1765}, {\"id\": \"D9\", \"cls\": \"truck\", \"conf\": 0.1456, \"box_xywh\": [699.3, 353.2, 76.8, 94.3], \"center_px\": [738, 400], \"lat\": 39.93722, \"lon\": 32.849252, \"dist_to_base_m\": 1741}, {\"id\": \"D10\", \"cls\": \"car\", \"conf\": 0.1229, \"box_xywh\": [394.4, 177.3, 18.1, 17.9], \"center_px\": [403, 186], \"lat\": 39.937519, \"lon\": 32.848641, \"dist_to_base_m\": 1784}, {\"id\": \"D11\", \"cls\": \"car\", \"conf\": 0.0558, \"box_xywh\": [738.4, 332.2, 112.8, 73.6], \"center_px\": [795, 369], \"lat\": 39.937263, \"lon\": 32.849356, \"dist_to_base_m\": 1744}, {\"id\": \"D12\", \"cls\": \"truck\", \"conf\": 0.0515, \"box_xywh\": [459.2, 114.6, 10.7, 11.7], \"center_px\": [465, 120], \"lat\": 39.937611, \"lon\": 32.848753, \"dist_to_base_m\": 1792}], \"note\": \"Kutuların çizili hali bir sonraki mesajda (kesikli kutu = güven < 0.3).\"}",
+   "t": 1790436185.823591
+  },
+  {
+   "kind": "tool_call",
+   "title": "match_tracks",
+   "detail": {},
+   "t": 1790436185.823992
+  },
+  {
+   "kind": "tool_result",
+   "title": "match_tracks",
+   "detail": "{\"capture_time\": \"13:25\", \"tracks_ending_at_capture\": 4, \"gate_m\": 8.0, \"matches\": [{\"detection\": \"D1\", \"cls\": \"car\", \"conf\": 0.9177, \"track_id\": \"T0047\", \"dist_m\": 0.1, \"second_nearest\": {\"track_id\": \"T0182\", \"dist_m\": 18.1}}, {\"detection\": \"D2\", \"cls\": \"car\", \"conf\": 0.8917, \"track_id\": \"T0182\", \"dist_m\": 0.2, \"second_nearest\": {\"track_id\": \"T0047\", \"dist_m\": 18.3}}, {\"detection\": \"D3\", \"cls\": \"van\", \"conf\": 0.733, \"track_id\": null, \"dist_m\": null, \"second_nearest\": null}, {\"detection\": \"D4\", \"cls\": \"car\", \"conf\": 0.3989, \"track_id\": null, \"dist_m\": null, \"second_nearest\": null}, {\"detection\": \"D5\", \"cls\": \"car\", \"conf\": 0.3845, \"track_id\": \"T0183\", \"dist_m\": 1.4, \"second_nearest\": {\"track_id\": \"T0115\", \"dist_m\": 34.2}}, {\"detection\": \"D6\", \"cls\": \"truck\", \"conf\": 0.3265, \"track_id\": null, \"dist_m\": null, \"second_nearest\": null}, {\"detection\": \"D7\", \"cls\": \"car\", \"conf\": 0.2267, \"track_id\": \"T0115\", \"dist_m\": 0.6, \"second_nearest\": null}, {\"detection\": \"D8\", \"cls\": \"car\", \"conf\": 0.1527, \"track_id\": null, \"dist_m\": null, \"second_nearest\": null}, {\"detection\": \"D9\", \"cls\": \"truck\", \"conf\": 0.1456, \"track_id\": null, \"dist_m\": null, \"second_nearest\": null}, {\"detection\": \"D10\", \"cls\": \"car\", \"conf\": 0.1229, \"track_id\": null, \"dist_m\": null, \"second_nearest\": null}, {\"detection\": \"D11\", \"cls\": \"car\", \"conf\": 0.0558, \"track_id\": null, \"dist_m\": null, \"second_nearest\": null}, {\"detection\": \"D12\", \"cls\": \"truck\", \"conf\": 0.0515, \"track_id\": null, \"dist_m\": null, \"second_nearest\": null}], \"tracks_in_frame_without_detection\": [], \"tracks_just_outside_frame\": []}",
+   "t": 1790436185.8241038
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_reports",
+   "detail": {},
+   "t": 1790436185.824289
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_reports",
+   "detail": "{\"capture_time\": \"13:25\", \"window\": \"çekimden 180 dk önce – 30 dk sonra\", \"radius_m\": 250.0, \"frame_detection_counts\": {\"car\": {\"conf>=0.3\": 4, \"conf<0.3\": 4}, \"van\": {\"conf>=0.3\": 1, \"conf<0.3\": 0}, \"truck\": {\"conf>=0.3\": 1, \"conf<0.3\": 2}}, \"reports\": [{\"rid\": \"R000\", \"time\": \"13:05\", \"source\": \"official\", \"text\": \"39.9374N 32.8483E civarinda 1 kamyon goruldu, yukleri tespit edilemedi.\", \"scope\": \"koordinat\", \"minutes_before_capture\": 20, \"point\": [39.9374, 32.8483], \"point_decimals\": 4, \"point_px\": [217, 271], \"dist_point_to_frame_m\": 0, \"within_60m_of_point\": [{\"id\": \"D3\", \"cls\": \"van\", \"conf\": 0.733, \"dist_m\": 2, \"track_id\": null}, {\"id\": \"D2\", \"cls\": \"car\", \"conf\": 0.8917, \"dist_m\": 5, \"track_id\": \"T0182\"}, {\"id\": \"D4\", \"cls\": \"car\", \"conf\": 0.3989, \"dist_m\": 17, \"track_id\": null}, {\"id\": \"D1\", \"cls\": \"car\", \"conf\": 0.9177, \"dist_m\": 22, \"track_id\": \"T0047\"}, {\"id\": \"D10\", \"cls\": \"car\", \"conf\": 0.1229, \"dist_m\": 32, \"track_id\": null}, {\"id\": \"D12\", \"cls\": \"truck\", \"conf\": 0.0515, \"dist_m\": 45, \"track_id\": null}]}, {\"rid\": \"R088\", \"time\": \"12:40\", \"source\": \"official\", \"text\": \"39.93740N 32.84903E civarinda bir otomobil uzun suredir hareketsiz duruyor.\", \"scope\": \"koordinat\", \"minutes_before_capture\": 45, \"point\": [39.9374, 32.84903], \"point_decimals\": 5, \"point_px\": [616, 271], \"dist_point_to_frame_m\": 0, \"within_60m_of_point\": [{\"id\": \"D7\", \"cls\": \"car\", \"conf\": 0.2267, \"dist_m\": 1, \"track_id\": \"T0115\"}, {\"id\": \"D8\", \"cls\": \"car\", \"conf\": 0.1527, \"dist_m\": 2, \"track_id\": null}, {\"id\": \"D9\", \"cls\": \"truck\", \"conf\": 0.1456, \"dist_m\": 28, \"track_id\": null}, {\"id\": \"D11\", \"cls\": \"car\", \"conf\": 0.0558, \"dist_m\": 32, \"track_id\": null}, {\"id\": \"D12\", \"cls\": \"truck\", \"conf\": 0.0515, \"dist_m\": 33, \"track_id\": null}, {\"id\": \"D5\", \"cls\": \"car\", \"conf\": 0.3845, \"dist_m\": 34, \"track_id\": \"T0183\"}, {\"id\": \"D10\", \"cls\": \"car\", \"conf\": 0.1229, \"dist_m\": 36, \"track_id\": null}, {\"id\": \"D6\", \"cls\": \"truck\", \"conf\": 0.3265, \"dist_m\": 47, \"track_id\": null}, {\"id\": \"D4\", \"cls\": \"car\", \"conf\": 0.3989, \"dist_m\": 50, \"track_id\": null}]}, {\"rid\": \"R076\", \"time\": \"12:40\", \"source\": \"third_party\", \"text\": \"Kuzey Yolu bolgesindeki devriyeyle telsiz baglantisi 40 dakikadir kurulamiyor.\", \"scope\": \"bölge\", \"minutes_before_capture\": 45, \"zone\": \"Kuzey Yolu\"}, {\"rid\": \"R084\", \"time\": \"12:35\", \"source\": \"official\", \"text\": \"Kuzey Yolu cevresinden gelen bir ihbar incelendi, dogrulanamadi.\", \"scope\": \"bölge\", \"minutes_before_capture\": 50, \"zone\": \"Kuzey Yolu\"}, {\"rid\": \"R064\", \"time\": \"12:20\", \"source\": \"official\", \"text\": \"Kuzey Yolu bolgesindeki devriyeyle telsiz baglantisi 40 dakikadir kurulamiyor.\", \"scope\": \"bölge\", \"minutes_before_capture\": 65, \"zone\": \"Kuzey Yolu\"}, {\"rid\": \"R071\", \"time\": \"11:30\", \"source\": \"official\", \"text\": \"Kuzey Yolu cevresinden gelen bir ihbar incelendi, dogrulanamadi.\", \"scope\": \"bölge\", \"minutes_before_capture\": 115, \"zone\": \"Kuzey Yolu\"}, {\"rid\": \"R098\", \"time\": \"11:30\", \"source\": \"official\", \"text\": \"Kuzey Yolu bolgesinde trafik akisi normal seyrediyor.\", \"scope\": \"bölge\", \"minutes_before_capture\": 115, \"zone\": \"Kuzey Yolu\"}, {\"rid\": \"R031\", \"time\": \"11:00\", \"source\": \"third_party\", \"text\": \"Sabah devriyesi Kuzey Yolu bolgesinde olagandisi bir durum bildirmedi.\", \"scope\": \"bölge\", \"minutes_before_capture\": 145, \"zone\": \"Kuzey Yolu\"}]}",
+   "t": 1790436185.8256938
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "Check motions of T0047, T0182, T0183, T0115. D6/D9 look like red garbage trucks / parked machinery — verify visually. D7/D8 near R088 report about idle car.",
+   "t": 1790436200.134906
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0047"
+   },
+   "t": 1790436200.135668
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0047\", \"start\": \"11:25\", \"end\": \"13:25\", \"dist_to_base_series\": [[\"11:25\", 1763], [\"11:40\", 1761], [\"11:55\", 1761], [\"12:10\", 1760], [\"12:25\", 1756], [\"12:40\", 1756], [\"12:55\", 1753], [\"13:10\", 1753], [\"13:25\", 1758]], \"dist_to_base_now_m\": 1758, \"start_dist_to_base_m\": 1763, \"min_dist_to_base_m\": 1753, \"min_dist_time\": \"12:55\", \"speed_last_10m_ms\": 7.6, \"speed_last_30m_ms\": 5.1, \"moving_speed_ms\": 7.4, \"path_len_m\": 29012, \"net_disp_m\": 1762, \"closing_rate_30m_ms\": -0.0, \"closing_rate_60m_ms\": -0.0, \"heading_deg\": 302, \"heading_compass\": \"kuzeybatı\", \"bearing_to_base_deg\": 166, \"heading_vs_base_deg\": 135, \"base_sweep_deg\": -60, \"eta_to_base_min\": null, \"moving_now\": true, \"stopped_minutes_total\": 50, \"stops\": [{\"start\": \"11:40\", \"end\": \"12:00\", \"minutes\": 20, \"dist_to_base_m\": 1761}, {\"start\": \"12:15\", \"end\": \"12:25\", \"minutes\": 10, \"dist_to_base_m\": 1760}, {\"start\": \"12:40\", \"end\": \"12:50\", \"minutes\": 10, \"dist_to_base_m\": 1756}, {\"start\": \"13:05\", \"end\": \"13:15\", \"minutes\": 10, \"dist_to_base_m\": 1753}], \"moving_together_with\": []}",
+   "t": 1790436200.137181
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0182"
+   },
+   "t": 1790436200.1378372
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0182\", \"start\": \"11:25\", \"end\": \"13:25\", \"dist_to_base_series\": [[\"11:25\", 7446], [\"11:40\", 7447], [\"11:55\", 7504], [\"12:10\", 3297], [\"12:25\", 1773], [\"12:40\", 1773], [\"12:55\", 1779], [\"13:10\", 1777], [\"13:25\", 1775]], \"dist_to_base_now_m\": 1775, \"start_dist_to_base_m\": 7446, \"min_dist_to_base_m\": 1769, \"min_dist_time\": \"12:20\", \"speed_last_10m_ms\": 0.0, \"speed_last_30m_ms\": 0.0, \"moving_speed_ms\": 4.2, \"path_len_m\": 7581, \"net_disp_m\": 5716, \"closing_rate_30m_ms\": 0.0, \"closing_rate_60m_ms\": -0.0, \"heading_deg\": 167, \"heading_compass\": \"güney\", \"bearing_to_base_deg\": 167, \"heading_vs_base_deg\": 1, \"base_sweep_deg\": 11, \"eta_to_base_min\": null, \"moving_now\": false, \"stopped_minutes_total\": 90, \"stops\": [{\"start\": \"11:25\", \"end\": \"11:45\", \"minutes\": 20, \"dist_to_base_m\": 7446}, {\"start\": \"12:15\", \"end\": \"13:25\", \"minutes\": 70, \"dist_to_base_m\": 1771}], \"moving_together_with\": [{\"track_id\": \"T0115\", \"mean_sep_m\": 57, \"max_sep_m\": 67, \"both_moved_m\": 6}]}",
+   "t": 1790436200.1387992
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0183"
+   },
+   "t": 1790436200.139715
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0183\", \"start\": \"11:25\", \"end\": \"13:25\", \"dist_to_base_series\": [[\"11:25\", 4270], [\"11:40\", 6226], [\"11:55\", 5061], [\"12:10\", 5059], [\"12:25\", 5057], [\"12:40\", 7226], [\"12:55\", 5511], [\"13:10\", 5513], [\"13:25\", 1742]], \"dist_to_base_now_m\": 1742, \"start_dist_to_base_m\": 4270, \"min_dist_to_base_m\": 1742, \"min_dist_time\": \"13:25\", \"speed_last_10m_ms\": 6.7, \"speed_last_30m_ms\": 2.2, \"moving_speed_ms\": 6.5, \"path_len_m\": 11755, \"net_disp_m\": 2773, \"closing_rate_30m_ms\": 2.09, \"closing_rate_60m_ms\": 0.92, \"heading_deg\": 133, \"heading_compass\": \"güneydoğu\", \"bearing_to_base_deg\": 170, \"heading_vs_base_deg\": 37, \"base_sweep_deg\": 24, \"eta_to_base_min\": 13.9, \"moving_now\": true, \"stopped_minutes_total\": 85, \"stops\": [{\"start\": \"11:35\", \"end\": \"11:50\", \"minutes\": 15, \"dist_to_base_m\": 6230}, {\"start\": \"11:55\", \"end\": \"12:30\", \"minutes\": 35, \"dist_to_base_m\": 5061}, {\"start\": \"12:35\", \"end\": \"12:50\", \"minutes\": 15, \"dist_to_base_m\": 7230}, {\"start\": \"12:55\", \"end\": \"13:15\", \"minutes\": 20, \"dist_to_base_m\": 5511}], \"moving_together_with\": []}",
+   "t": 1790436200.140722
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0115"
+   },
+   "t": 1790436200.141071
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0115\", \"start\": \"11:25\", \"end\": \"13:25\", \"dist_to_base_series\": [[\"11:25\", 1797], [\"11:40\", 1794], [\"11:55\", 1791], [\"12:10\", 1790], [\"12:25\", 1777], [\"12:40\", 1775], [\"12:55\", 1774], [\"13:10\", 1769], [\"13:25\", 1764]], \"dist_to_base_now_m\": 1764, \"start_dist_to_base_m\": 1797, \"min_dist_to_base_m\": 1764, \"min_dist_time\": \"13:25\", \"speed_last_10m_ms\": 0.0, \"speed_last_30m_ms\": 0.0, \"moving_speed_ms\": 0.0, \"path_len_m\": 84, \"net_disp_m\": 35, \"closing_rate_30m_ms\": 0.01, \"closing_rate_60m_ms\": 0.0, \"heading_deg\": null, \"heading_compass\": null, \"bearing_to_base_deg\": 169, \"heading_vs_base_deg\": null, \"base_sweep_deg\": 0, \"eta_to_base_min\": null, \"moving_now\": false, \"stopped_minutes_total\": 120, \"stops\": [{\"start\": \"11:25\", \"end\": \"13:25\", \"minutes\": 120, \"dist_to_base_m\": 1797}], \"moving_together_with\": [{\"track_id\": \"T0182\", \"mean_sep_m\": 57, \"max_sep_m\": 67, \"both_moved_m\": 6}]}",
+   "t": 1790436200.14189
+  },
+  {
+   "kind": "tool_call",
+   "title": "view_region",
+   "detail": {
+    "question": "D6 ve D9 bölgeleri: gerçek araç mı, kırmızı renkli ne (dumpster/makine)? Yük veya örtü var mı?",
+    "target": "D6"
+   },
+   "t": 1790436200.142247
+  },
+  {
+   "kind": "tool_result",
+   "title": "view_region",
+   "detail": "{\"target\": \"D6\", \"note\": \"Yakın plan bir sonraki mesajda; hedef görüntünün merkezinde.\"}",
+   "t": 1790436200.147116
+  },
+  {
+   "kind": "tool_call",
+   "title": "view_region",
+   "detail": {
+    "question": "D7/D8 çevresi: park halinde otomobil var mı, kimse yok mu, şüpheli durum var mı?",
+    "target": "D7"
+   },
+   "t": 1790436200.1474
+  },
+  {
+   "kind": "tool_result",
+   "title": "view_region",
+   "detail": "{\"target\": \"D7\", \"note\": \"Yakın plan bir sonraki mesajda; hedef görüntünün merkezinde.\"}",
+   "t": 1790436200.1497998
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "D6: kırmızı kamyon (çöp kamyonu benzeri), gerçek araç. D7: ağaç altında park halinde araç; T0115 120 dk hareketsiz — R088 ile uyumlu.\n\nT0183: 12:40'ta 7226 m'den 13:25'te 1742 m'ye — 45 dakikada ~5.5 km, kareye yeni geldi, üsse ~1742 m, ETA 13.9 dk, hareket halinde. DİKKAT adayı. Ama hızlar makul. Ama beklenmedik yaklaşım + telsiz iletişim kesintisi raporları Kuzey Yolu bölgesinde — bağlantısızlık. T0182: 12:10-12:25'te 7446→1773 m ani yaklaşım, sonra 70 dk park. Şüpheli: hızlı yaklaşım + park + T0115 yanında. T0115: 2 saat park.\n\nSeviyeler: T0183 DİKKAT (kareye yeni girdi, üsse doğru, hızlı yaklaşma geçmişi), T0182 DİKKAT (uzak mesafeden hızlı gelip üsse 1.7 km'de park; T0115 ile temas), T0115 İZLE (uzun süre park, R088 uyumlu), T0047 NORMAL (dolaşıyor, üsse kapanmıyor).",
+   "t": 1790436250.4752362
+  },
+  {
+   "kind": "warn",
+   "title": "Geçersiz değerlendirme",
+   "detail": "reports: her öğede rid (ör. R125) zorunlu",
+   "t": 1790436250.481
+  },
+  {
+   "kind": "warn",
+   "title": "Geçersiz değerlendirme",
+   "detail": "reports: her öğede rid (ör. R125) zorunlu",
+   "t": 1790436275.6369941
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "Rid alanı string, ben arrays verdim. Düz string ver.",
+   "t": 1790436297.9181828
+  },
+  {
+   "kind": "warn",
+   "title": "Geçersiz değerlendirme",
+   "detail": "reports: her öğede rid (ör. R125) zorunlu",
+   "t": 1790436297.920032
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "Rids need to be strings like \"R000\". They were. Maybe parser wants plain strings? I used JSON with \\r escapes... wait, my JSON had literal \"\\r\" sequences inside! That's corrupting. Write clean JSON.",
+   "t": 1790436323.569603
+  },
+  {
+   "kind": "final",
+   "title": "Değerlendirme",
+   "detail": {
+    "brief": "Kare (13:25, üsse 1768 m kuzeyde) 12 tespit içeriyor; 4 hareket kaydı eşleşti. D6 yakın planda gerçek bir kırmızı kamyon olarak doğrulandı; R000'ın 'kamyon' iddiasıyla uyumlu. D7/T0115, R088'in bildirdiği uzun süreli hareketsiz otomobildir (120 dk duruş, T0182'nin ~57 m yanında). T0182, 11:25'te 7446 m uzaklıktan gelip 12:15'ten beri üsse 1771 m'de park ediyor. T0183 kareye yeni girdi (12:40'ta 7226 m → 13:25'te 1742 m) ve üsse doğru ilerliyor (ETA ~14 dk). Kuzey Yolu devriyesiyle telsiz bağlantısı 40+ dakikadır kesik (R076, R064); bu bölgedeki hareketlilik yakın izlenmeli.",
+    "headline": "Üsse ~1,7 km kuzeyde (Kuzey Yolu) üç kayda değer araç: T0183 üsse yaklaşıyor, T0182 uzaktan gelip park etti, T0115 uzun süredir hareketsiz; bölgede devriye telsiz iletişimi de kesik.",
+    "overall_level": "DİKKAT",
+    "reports": [
+     {
+      "assessment": "tespitle uyumlu",
+      "reason": "Koordinatta D3 (van, 0.73) ve D2 (car) var; kamyon sınıfı D6 (0.33) yakın plandan doğrulandı; büyük ölçüde tutarlı.",
+      "rid": "R000"
+     },
+     {
+      "assessment": "tespitle uyumlu",
+      "reason": "D7/T0115 noktada ve 120 dakikadır hareketsiz; R088 iddiasını doğruluyor.",
+      "rid": "R088"
+     },
+     {
+      "assessment": "doğrulanamaz",
+      "reason": "Devriyeyle temas kurulamıyor; görüntüde devriye ayırt edilemiyor.",
+      "rid": "R076"
+     },
+     {
+      "assessment": "doğrulanamaz",
+      "reason": "İhbar içeriği belirsiz, karede ayrıca doğrulanacak unsur yok.",
+      "rid": "R084"
+     },
+     {
+      "assessment": "doğrulanamaz",
+      "reason": "R076 ile aynı sorun; bağımsız teyit yok.",
+      "rid": "R064"
+     },
+     {
+      "assessment": "doğrulanamaz",
+      "reason": "İhbar içeriği belirsiz.",
+      "rid": "R071"
+     },
+     {
+      "assessment": "kısmen uyumlu",
+      "reason": "Trafik genel olarak akıyor ama T0182 parkı ve T0183 yaklaşımı gibi olağan dışı unsurlar da mevcut.",
+      "rid": "R098"
+     },
+     {
+      "assessment": "ilgisiz",
+      "reason": "Sabah saatine ait, mevcut durumla ilgisi yok.",
+      "rid": "R031"
+     }
+    ],
+    "uncertainties": [
+     "D9/D11/D12 düşük güvenli tespitler; D6'nın yanındaki kırmızı nesnelerle çakışıyor olabilir, ayrı araç olup olmadıkları belirsiz",
+     "R000'ın 'kamyon' bildirdiği koordinatta en güçlü tespit van (D3); sınıf uyuşmazlığı kısmen",
+     "T0183'ün niyeti belirsiz: normal geçiş mi, üsse yönelme mi ayrıştırılamadı"
+    ],
+    "vehicles": [
+     {
+      "evidence": [
+       "T0183: 12:40'ta 7226 m → 13:25'te 1742 m",
+       "kapanma hızı 2.09 m/s (30 dk)",
+       "D5 tespiti, conf 0.38",
+       "ETA 13.9 dk"
+      ],
+      "id": "D5",
+      "level": "DİKKAT",
+      "reason": "45 dakikada 7226 m'den 1742 m'ye gelip kareye girdi; hareket halinde ve üsse yöneliyor (bearing 170°, heading 133°), ETA ~14 dk.",
+      "track_id": "T0183"
+     },
+     {
+      "evidence": [
+       "T0182: 12:10'da 3297 m, 12:25'te 1773 m",
+       "12:15'ten beri 70 dk duruş",
+       "T0115 ile mean_sep 57 m"
+      ],
+      "id": "D2",
+      "level": "DİKKAT",
+      "reason": "Uzaktan (7.4 km) hızlı yaklaşan araç; 12:15'ten beri üsse 1771 m'de park halinde, T0115 ile beraber duruyor.",
+      "track_id": "T0182"
+     },
+     {
+      "evidence": [
+       "T0115: path_len 84 m, stopped 120 dk",
+       "R088 ile uyumlu"
+      ],
+      "id": "D7",
+      "level": "İZLE",
+      "reason": "120 dakikadır hareketsiz; R088 raporuyla birebir uyumlu. Yakın planda ağaç altında araç olarak görüldü.",
+      "track_id": "T0115"
+     },
+     {
+      "evidence": [
+       "D6 yakın plan: kırmızı kamyon",
+       "conf 0.33"
+      ],
+      "id": "D6",
+      "level": "NORMAL",
+      "reason": "Yakın planda kırmızı renkli gerçek bir kamyon (dumper tipi) olarak doğrulandı; yol kenarında duruyor, yük/örtü izi yok."
+     },
+     {
+      "evidence": [
+       "T0047: min 1753 m (12:55), şimdi 1758 m",
+       "heading_vs_base 135°"
+      ],
+      "id": "D1",
+      "level": "NORMAL",
+      "reason": "Bölgede dolaşıyor, üsse yaklaşmıyor (kapanma ~0); toplam 50 dk duraklama vardı.",
+      "track_id": "T0047"
+     }
+    ]
+   },
+   "t": 1790436323.5715368
+  }
+ ],
+ "usage": {
+  "calls": 6,
+  "prompt_tokens": 51888,
+  "completion_tokens": 6088,
+  "reasoning_tokens": 452,
+  "seconds": 146.5
+ },
+ "effort": "low",
+ "model": "glm-5.3-flash",
+ "created": 1790436323.571568
+}

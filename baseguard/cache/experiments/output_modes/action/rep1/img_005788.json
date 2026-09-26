@@ -1,0 +1,567 @@
+{
+ "image_id": "img_005788",
+ "brief": {
+  "action": "hemen teyit/müdahale",
+  "brief": "Karede öndeki şeritte yan yana duran iki araç öne çıkıyor: siyah sedan (D1/T0074) ve beyaz açık kasalı kamyonet (D4/T0120). T0074 saat 09:10–10:45 arasında üsten 942 m uzakta 95 dk bekledi, sonra buraya sürüldü; T0120 ise 2 saatte 27.195 m yol yapıp net 17 m yer değiştirmiş — bölgede duraklamalı dolaşmış. İkisi şu an duruş çizgisinde yan yana duruyor; buluşma şüphesi var, birim gönderilip kimlik teyidi istenmeli. Arka şeritte T0112, T0104, T0136, T0090, T0144 üsse doğru doğu yönünde akan normal trafik (varış tahmini 24–47 dk). Kare üst kenarındaki T0223 120 dakikadır hareketsiz (tespit yok, kayıt var) — R032'nin 'uzun süredir hareketsiz kamyon' iddiasıyla konum olarak uyumlu ama sınıf görüntüyle doğrulanamıyor. R017'nin '5 kamyon durdu' iddiası tespitlerle çelişiyor: o noktada otomobil/van var, kamyon yok. D8 (güven 0.06, kayıt yok) kenarda soluk leke; yanlış alarm olasılığı yüksek.",
+  "headline": "Üs yolu üzerinde yan yana duran şüpheli araç ikilisi (T0074+T0120) teyit edilmeli; arka şeritteki trafik normal.",
+  "reports": [
+   {
+    "assessment": "kısmen uyumlu",
+    "reason": "Noktada gerçekten ~6 araç var/duruyor, ancak hiçbiri kamyon değil; tespitler otomobil ve van gösteriyor (D1-D7). Sınıf ve sayı iddiası tespitlerle çelişiyor.",
+    "rid": "R017"
+   },
+   {
+    "assessment": "kısmen uyumlu",
+    "reason": "Verilen noktada T0223 kaydı 120 dk hareketsiz duruyor ve karede tespit yok; ancak aracın kamyon olduğu görüntüyle doğrulanamıyor.",
+    "rid": "R032"
+   },
+   {
+    "assessment": "doğrulanamaz",
+    "reason": "Bati Yerlesimi devriyesiyle telsiz bağlantısı kaybı kare içinden doğrulanamaz; kare bölgeye 752 m uzakta ve telsiz durumunu gösteren veri yok.",
+    "rid": "R110"
+   },
+   {
+    "assessment": "doğrulanamaz",
+    "reason": "Karedeki arka şerit akışı düzenli ancak rapor Bati Yerlesimi bölgesine ait; kare bölgenin 752 m dışında, bölge içi durum doğrulanamaz.",
+    "rid": "R135"
+   },
+   {
+    "assessment": "doğrulanamaz",
+    "reason": "Dün geceye ait doğrulanmamış ihbar; 11:10 karesi ve 2 saatlik hareket kayıtlarıyla karşılaştırılamaz.",
+    "rid": "R087"
+   }
+  ],
+  "uncertainties": [
+   "T0223 görüntüde tespit edilemedi (kare üst kenarı); uzun süredir duran aracın sınıfı ve varlığı doğrulanamıyor.",
+   "D8 (güven 0.06) kenarda çok soluk; yanlış alarm olası ama kesin dışlanamadı.",
+   "T0120'un 2 saatlik duraklamalı dolaşması farklı açıklamalara açık; ikili duruş buluşma şüphesini güçlendiriyor ama niyet belirsiz.",
+   "T0074'ün üs yakınındaki 95 dakikalık bekleyişi farklı amaçlara bağlanabilir; kare dışı davranış hakkında ek veri yok."
+  ],
+  "vehicles": [
+   {
+    "action": "hemen teyit/müdahale",
+    "confidence": "yüksek",
+    "evidence": [
+     "D1 conf 0.92, T0074 ile 0.0 m eşleşti",
+     "T0074: 09:10-10:45 arası 942 m'de 95 dk duraklama",
+     "T0074: 10:55-11:10 arasında 2700→3562 m'ye sürüldü",
+     "Yakın plan: siyah sedan, duruş çizgisinde T0120 ile bitişik"
+    ],
+    "id": "D1",
+    "reason": "Üsten 942 m uzakta 95 dk bekleyen araç, çıkış rotası üzerinde T0120 ile yan yana durmak üzere buraya sürüldü; davranış örgütlü buluşma izlenimi veriyor, kimlik teyidi şart.",
+    "track_id": "T0074"
+   },
+   {
+    "action": "hemen teyit/müdahale",
+    "confidence": "yüksek",
+    "evidence": [
+     "D4 conf 0.76, T0120 ile 0.1 m eşleşti",
+     "T0120: path_len 27195 m, net_disp 17 m",
+     "T0120: 4 ayrı duraklama, toplam 60 dk",
+     "Yakın plan: beyaz açık kasalı kamyonet, D1'e bitişik duruyor"
+    ],
+    "id": "D4",
+    "reason": "2 saat boyunca bölgede 27 km yol yapıp net 17 m yer değiştiren, aralıklı duraklamalar yapan araç; şimdi T0074 ile birlikte şeritte duruyor. Dolaşma+duruşma deseni şüpheli.",
+    "track_id": "T0120"
+   },
+   {
+    "action": "izlemeye al",
+    "confidence": "düşük",
+    "evidence": [
+     "R032 noktası ile 0 m",
+     "stops: 09:10-11:10, 120 dk",
+     "Nokta çevresinde tespit yok"
+    ],
+    "id": "T0223",
+    "reason": "Kare üst kenarında 120 dakikadır hareketsiz, görüntüde tespit yok (kenar/ağaç altında olabilir). R032 ile konum olarak uyumlu; sınıf doğrulanamadığı için izlenmeli.",
+    "track_id": "T0223"
+   },
+   {
+    "action": "izlemeye al",
+    "confidence": "yüksek",
+    "evidence": [
+     "D2 conf 0.82, T0112 eşleşti",
+     "heading 102°, bearing_to_base 102°, eta 45.7 dk"
+    ],
+    "id": "D2",
+    "reason": "Üsse doğru (doğu) yaklaşan sıradan trafik; ETA ~46 dk. Sonraki karelerde izlenmeli.",
+    "track_id": "T0112"
+   },
+   {
+    "action": "izlemeye al",
+    "confidence": "yüksek",
+    "evidence": [
+     "D3 conf 0.78, T0104 eşleşti",
+     "heading_vs_base 0°, eta 47.4 dk"
+    ],
+    "id": "D3",
+    "reason": "Üsse doğru akan olağan trafik; izlenmeli.",
+    "track_id": "T0104"
+   },
+   {
+    "action": "izlemeye al",
+    "confidence": "yüksek",
+    "evidence": [
+     "D5 conf 0.63, T0136 eşleşti",
+     "heading_vs_base 0°, eta 24.4 dk"
+    ],
+    "id": "D5",
+    "reason": "Üsse doğru en hızlı yaklaşan araç (ETA ~24 dk); olağan trafik ama yakın varış nedeniyle izlenmeli.",
+    "track_id": "T0136"
+   },
+   {
+    "action": "izlemeye al",
+    "confidence": "yüksek",
+    "evidence": [
+     "D6 conf 0.53, T0090 eşleşti",
+     "heading 78°, base_sweep 32°"
+    ],
+    "id": "D6",
+    "reason": "Doğu yönünde akan trafik; üsse yaklaşma hızı 0, tehdit göstergesi yok.",
+    "track_id": "T0090"
+   },
+   {
+    "action": "izlemeye al",
+    "confidence": "düşük",
+    "evidence": [
+     "D7 conf 0.159 (düşük güven)",
+     "T0144 heading_vs_base 35°, eta 33.5 dk"
+    ],
+    "id": "D7",
+    "reason": "Tespit güveni düşük (0.16) ama T0144 hareket kaydıyla eşleşti ve kayıt üsse doğru gidiyor; araç gerçek görünüyor, takip yeterli.",
+    "track_id": "T0144"
+   },
+   {
+    "action": "işlem gerekmez",
+    "confidence": "düşük",
+    "evidence": [
+     "D8 conf 0.062",
+     "match_tracks: eşleşen kayıt yok",
+     "Yakın plan: yol/bariyer, net araç görünmüyor"
+    ],
+    "id": "D8",
+    "reason": "Güven 0.06, hareket kaydı yok, yakın planda net araç görünmüyor; yanlış alarm olasılığı yüksek.",
+    "track_id": null
+   }
+  ]
+ },
+ "trace": [
+  {
+   "kind": "user",
+   "title": "Görev",
+   "detail": "img_005788 karesini değerlendir. (+ işaretsiz kare)",
+   "t": 1790443890.555598
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "Let me start by getting image info, detections, tracks, and reports.",
+   "t": 1790443896.348881
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_image_info",
+   "detail": {},
+   "t": 1790443896.3489
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_image_info",
+   "detail": "{\"image_id\": \"img_005788\", \"capture_time\": \"11:10\", \"width_px\": 1360, \"height_px\": 765, \"corners\": {\"top_left\": [39.928509, 32.810957], \"top_right\": [39.928509, 32.813151], \"bottom_left\": [39.927563, 32.810957], \"bottom_right\": [39.927563, 32.813151]}, \"center\": [39.928036, 32.812054], \"footprint_m\": [187, 105], \"m_per_px\": 0.138, \"nearest_zone\": \"Bati Yerlesimi\", \"zone_dist_m\": 752, \"base\": {\"name\": \"Merkez Us\", \"lat\": 39.92184, \"lon\": 32.85306}, \"dist_to_base_m\": 3564, \"direction_from_base\": \"batı\"}",
+   "t": 1790443896.3489559
+  },
+  {
+   "kind": "tool_call",
+   "title": "detect_vehicles",
+   "detail": {},
+   "t": 1790443896.348959
+  },
+  {
+   "kind": "tool_result",
+   "title": "detect_vehicles",
+   "detail": "{\"model\": \"full-blend (cached)\", \"min_conf\": 0.05, \"count\": 8, \"detections\": [{\"id\": \"D1\", \"cls\": \"car\", \"conf\": 0.9195, \"box_xywh\": [600.8, 548.8, 101.6, 99.1], \"center_px\": [652, 598], \"lat\": 39.927769, \"lon\": 32.812008, \"dist_to_base_m\": 3562}, {\"id\": \"D2\", \"cls\": \"car\", \"conf\": 0.817, \"box_xywh\": [635.1, 119.6, 20.5, 20.9], \"center_px\": [645, 130], \"lat\": 39.928348, \"lon\": 32.811998, \"dist_to_base_m\": 3575}, {\"id\": \"D3\", \"cls\": \"car\", \"conf\": 0.7841, \"box_xywh\": [668.9, 123.6, 20.6, 21.8], \"center_px\": [679, 134], \"lat\": 39.928343, \"lon\": 32.812053, \"dist_to_base_m\": 3571}, {\"id\": \"D4\", \"cls\": \"truck\", \"conf\": 0.7636, \"box_xywh\": [678.3, 611.8, 71.5, 128.2], \"center_px\": [714, 676], \"lat\": 39.927673, \"lon\": 32.812109, \"dist_to_base_m\": 3552}, {\"id\": \"D5\", \"cls\": \"car\", \"conf\": 0.6258, \"box_xywh\": [640.9, 69.5, 17.5, 18.8], \"center_px\": [650, 79], \"lat\": 39.928411, \"lon\": 32.812005, \"dist_to_base_m\": 3576}, {\"id\": \"D6\", \"cls\": \"van\", \"conf\": 0.5345, \"box_xywh\": [723.4, 98.7, 17.9, 20.9], \"center_px\": [732, 109], \"lat\": 39.928374, \"lon\": 32.812138, \"dist_to_base_m\": 3564}, {\"id\": \"D7\", \"cls\": \"car\", \"conf\": 0.1592, \"box_xywh\": [614.3, 17.5, 14.6, 15.7], \"center_px\": [622, 25], \"lat\": 39.928478, \"lon\": 32.81196, \"dist_to_base_m\": 3582}, {\"id\": \"D8\", \"cls\": \"car\", \"conf\": 0.0623, \"box_xywh\": [1352.8, 493.5, 7.2, 41.4], \"center_px\": [1356, 514], \"lat\": 39.927873, \"lon\": 32.813145, \"dist_to_base_m\": 3469}], \"note\": \"Kutuların çizili hali bir sonraki mesajda (kesikli kutu = güven < 0.3).\"}",
+   "t": 1790443896.362721
+  },
+  {
+   "kind": "tool_call",
+   "title": "match_tracks",
+   "detail": {},
+   "t": 1790443896.36273
+  },
+  {
+   "kind": "tool_result",
+   "title": "match_tracks",
+   "detail": "{\"capture_time\": \"11:10\", \"tracks_ending_at_capture\": 9, \"gate_m\": 8.0, \"matches\": [{\"detection\": \"D1\", \"cls\": \"car\", \"conf\": 0.9195, \"track_id\": \"T0074\", \"dist_m\": 0.0, \"second_nearest\": {\"track_id\": \"T0120\", \"dist_m\": 13.8}}, {\"detection\": \"D2\", \"cls\": \"car\", \"conf\": 0.817, \"track_id\": \"T0112\", \"dist_m\": 0.0, \"second_nearest\": {\"track_id\": \"T0104\", \"dist_m\": 4.7}}, {\"detection\": \"D3\", \"cls\": \"car\", \"conf\": 0.7841, \"track_id\": \"T0104\", \"dist_m\": 0.1, \"second_nearest\": {\"track_id\": \"T0112\", \"dist_m\": 4.7}}, {\"detection\": \"D4\", \"cls\": \"truck\", \"conf\": 0.7636, \"track_id\": \"T0120\", \"dist_m\": 0.1, \"second_nearest\": {\"track_id\": \"T0074\", \"dist_m\": 13.7}}, {\"detection\": \"D5\", \"cls\": \"car\", \"conf\": 0.6258, \"track_id\": \"T0136\", \"dist_m\": 0.1, \"second_nearest\": {\"track_id\": \"T0112\", \"dist_m\": 7.0}}, {\"detection\": \"D6\", \"cls\": \"van\", \"conf\": 0.5345, \"track_id\": \"T0090\", \"dist_m\": 0.1, \"second_nearest\": {\"track_id\": \"T0104\", \"dist_m\": 8.2}}, {\"detection\": \"D7\", \"cls\": \"car\", \"conf\": 0.1592, \"track_id\": \"T0144\", \"dist_m\": 0.6, \"second_nearest\": {\"track_id\": \"T0223\", \"dist_m\": 2.5}}, {\"detection\": \"D8\", \"cls\": \"car\", \"conf\": 0.0623, \"track_id\": null, \"dist_m\": null, \"second_nearest\": null}], \"tracks_in_frame_without_detection\": [{\"track_id\": \"T0223\", \"center_px\": [613, 9], \"lat\": 39.928498, \"lon\": 32.811946, \"nearest_detection\": \"D7\", \"nearest_detection_dist_m\": 2.5}], \"tracks_just_outside_frame\": [{\"track_id\": \"T0205\", \"dist_outside_frame_m\": 17}]}",
+   "t": 1790443896.362785
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_reports",
+   "detail": {},
+   "t": 1790443896.3627882
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_reports",
+   "detail": "{\"capture_time\": \"11:10\", \"window\": \"çekimden 180 dk önce – 30 dk sonra\", \"radius_m\": 250.0, \"frame_detection_counts\": {\"car\": {\"conf>=0.3\": 4, \"conf<0.3\": 2}, \"truck\": {\"conf>=0.3\": 1, \"conf<0.3\": 0}, \"van\": {\"conf>=0.3\": 1, \"conf<0.3\": 0}}, \"reports\": [{\"rid\": \"R017\", \"time\": \"11:05\", \"source\": \"official\", \"text\": \"39.9283N 32.8120E yakininda 5 kamyonun durdugu bildirildi.\", \"scope\": \"koordinat\", \"minutes_before_capture\": 5, \"point\": [39.9283, 32.812], \"point_decimals\": 4, \"point_px\": [647, 169], \"dist_point_to_frame_m\": 0, \"within_60m_of_point\": [{\"id\": \"D2\", \"cls\": \"car\", \"conf\": 0.817, \"dist_m\": 5, \"track_id\": \"T0112\"}, {\"id\": \"D3\", \"cls\": \"car\", \"conf\": 0.7841, \"dist_m\": 7, \"track_id\": \"T0104\"}, {\"id\": \"D5\", \"cls\": \"car\", \"conf\": 0.6258, \"dist_m\": 12, \"track_id\": \"T0136\"}, {\"id\": \"D6\", \"cls\": \"van\", \"conf\": 0.5345, \"dist_m\": 14, \"track_id\": \"T0090\"}, {\"id\": \"D7\", \"cls\": \"car\", \"conf\": 0.1592, \"dist_m\": 20, \"track_id\": \"T0144\"}, {\"id\": \"T0223\", \"cls\": \"(tespit yok, yalnız hareket kaydı)\", \"conf\": null, \"dist_m\": 22, \"track_id\": \"T0223\"}, {\"id\": \"D1\", \"cls\": \"car\", \"conf\": 0.9195, \"dist_m\": 59, \"track_id\": \"T0074\"}]}, {\"rid\": \"R032\", \"time\": \"09:50\", \"source\": \"official\", \"text\": \"39.92850N 32.81195E civarinda bir kamyon uzun suredir hareketsiz duruyor.\", \"scope\": \"koordinat\", \"minutes_before_capture\": 80, \"point\": [39.9285, 32.81195], \"point_decimals\": 5, \"point_px\": [616, 7], \"dist_point_to_frame_m\": 0, \"within_60m_of_point\": [{\"id\": \"T0223\", \"cls\": \"(tespit yok, yalnız hareket kaydı)\", \"conf\": null, \"dist_m\": 0, \"track_id\": \"T0223\"}, {\"id\": \"D7\", \"cls\": \"car\", \"conf\": 0.1592, \"dist_m\": 3, \"track_id\": \"T0144\"}, {\"id\": \"D5\", \"cls\": \"car\", \"conf\": 0.6258, \"dist_m\": 11, \"track_id\": \"T0136\"}, {\"id\": \"D2\", \"cls\": \"car\", \"conf\": 0.817, \"dist_m\": 17, \"track_id\": \"T0112\"}, {\"id\": \"D3\", \"cls\": \"car\", \"conf\": 0.7841, \"dist_m\": 20, \"track_id\": \"T0104\"}, {\"id\": \"D6\", \"cls\": \"van\", \"conf\": 0.5345, \"dist_m\": 21, \"track_id\": \"T0090\"}]}, {\"rid\": \"R110\", \"time\": \"10:30\", \"source\": \"official\", \"text\": \"Bati Yerlesimi bolgesindeki devriyeyle telsiz baglantisi 40 dakikadir kurulamiyor.\", \"scope\": \"bölge\", \"minutes_before_capture\": 40, \"zone\": \"Bati Yerlesimi\"}, {\"rid\": \"R135\", \"time\": \"09:50\", \"source\": \"official\", \"text\": \"Bati Yerlesimi bolgesinde trafik akisi normal seyrediyor.\", \"scope\": \"bölge\", \"minutes_before_capture\": 80, \"zone\": \"Bati Yerlesimi\"}, {\"rid\": \"R087\", \"time\": \"09:35\", \"source\": \"official\", \"text\": \"Dun gece Bati Yerlesimi cevresinde arac hareketliligi oldugu yonunde dogrulanmamis bir ihbar var.\", \"scope\": \"bölge\", \"minutes_before_capture\": 95, \"zone\": \"Bati Yerlesimi\"}]}",
+   "t": 1790443896.363991
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "Key observations: D1 (car 0.92, T0074) and D4 (truck 0.76, T0120) — the white vehicle at bottom looks like a pickup/van but labeled truck. D1 and D4 are close together near road stop line — possibly stopped together, could be suspicious (checkpoint-like). D2/D3/D5/D6/D7/T0223 far lane traffic. D8 conf 0.06 at right edge, no track — likely false alarm.\n\nR017 claims 5 trucks stopped at 39.9283,32.8120 — but detections show cars/van, no trucks there. Contradiction. R032 claims truck stationary long at point — T0223 nearby, no detection (could be parked). R110: patrol contact lost 40 min in Bati Yerlesimi — frame is 752m from Bati Yerlesimi.\n\nLet me examine motions of T0074, T0120, T0223, T0112, T0104, T0136, T0090, T0144. Prioritize T0074 and T0120 (foreground pair). Also view_region on D4 (white vehicle — truck vs pickup?), D8, D1.",
+   "t": 1790443911.415679
+  },
+  {
+   "kind": "say",
+   "title": "Ajan",
+   "detail": "[Bu turdaki düşünce notlarım]\nÖndeki D1+D4 (T0074, T0120) bitişik duruyor — beraber durup durmadığına bakacağım. D8 çok düşük güvenli, kenarda, kayıt yok. R017 \"5 kamyon\" diyor ama tespitlerde kamyon yok. Hareketleri ve yakın planları inceleyeceğim.",
+   "t": 1790443911.4156852
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0074"
+   },
+   "t": 1790443911.415746
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0074\", \"start\": \"09:10\", \"end\": \"11:10\", \"dist_to_base_series\": [[\"09:10\", 942], [\"09:25\", 953], [\"09:40\", 958], [\"09:55\", 957], [\"10:10\", 960], [\"10:25\", 961], [\"10:40\", 958], [\"10:55\", 2700], [\"11:10\", 3562]], \"dist_to_base_now_m\": 3562, \"start_dist_to_base_m\": 942, \"min_dist_to_base_m\": 942, \"min_dist_time\": \"09:10\", \"speed_last_10m_ms\": 2.9, \"speed_last_30m_ms\": 1.9, \"moving_speed_ms\": 5.8, \"path_len_m\": 3555, \"net_disp_m\": 2763, \"closing_rate_30m_ms\": -1.45, \"closing_rate_60m_ms\": -0.72, \"heading_deg\": 328, \"heading_compass\": \"kuzeybatı\", \"bearing_to_base_deg\": 101, \"heading_vs_base_deg\": 133, \"base_sweep_deg\": 28, \"eta_to_base_min\": null, \"moving_now\": true, \"stopped_minutes_total\": 110, \"stops\": [{\"start\": \"09:10\", \"end\": \"10:45\", \"minutes\": 95, \"dist_to_base_m\": 942}, {\"start\": \"10:50\", \"end\": \"11:05\", \"minutes\": 15, \"dist_to_base_m\": 2702}], \"moving_together_with\": []}",
+   "t": 1790443911.4171782
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0120"
+   },
+   "t": 1790443911.417185
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0120\", \"start\": \"09:10\", \"end\": \"11:10\", \"dist_to_base_series\": [[\"09:10\", 3548], [\"09:25\", 3545], [\"09:40\", 3549], [\"09:55\", 3549], [\"10:10\", 3549], [\"10:25\", 3549], [\"10:40\", 3549], [\"10:55\", 3552], [\"11:10\", 3552]], \"dist_to_base_now_m\": 3552, \"start_dist_to_base_m\": 3548, \"min_dist_to_base_m\": 3545, \"min_dist_time\": \"09:25\", \"speed_last_10m_ms\": 8.1, \"speed_last_30m_ms\": 3.9, \"moving_speed_ms\": 7.5, \"path_len_m\": 27195, \"net_disp_m\": 17, \"closing_rate_30m_ms\": -0.0, \"closing_rate_60m_ms\": -0.0, \"heading_deg\": 211, \"heading_compass\": \"güneybatı\", \"bearing_to_base_deg\": 101, \"heading_vs_base_deg\": 110, \"base_sweep_deg\": 0, \"eta_to_base_min\": null, \"moving_now\": true, \"stopped_minutes_total\": 60, \"stops\": [{\"start\": \"09:10\", \"end\": \"09:30\", \"minutes\": 20, \"dist_to_base_m\": 3548}, {\"start\": \"09:45\", \"end\": \"09:55\", \"minutes\": 10, \"dist_to_base_m\": 3549}, {\"start\": \"10:10\", \"end\": \"10:25\", \"minutes\": 15, \"dist_to_base_m\": 3549}, {\"start\": \"10:40\", \"end\": \"10:55\", \"minutes\": 15, \"dist_to_base_m\": 3549}], \"moving_together_with\": []}",
+   "t": 1790443911.418046
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0223"
+   },
+   "t": 1790443911.4180522
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0223\", \"start\": \"09:10\", \"end\": \"11:10\", \"dist_to_base_series\": [[\"09:10\", 3602], [\"09:25\", 3602], [\"09:40\", 3596], [\"09:55\", 3588], [\"10:10\", 3586], [\"10:25\", 3592], [\"10:40\", 3592], [\"10:55\", 3590], [\"11:10\", 3583]], \"dist_to_base_now_m\": 3583, \"start_dist_to_base_m\": 3602, \"min_dist_to_base_m\": 3583, \"min_dist_time\": \"11:10\", \"speed_last_10m_ms\": 0.0, \"speed_last_30m_ms\": 0.0, \"moving_speed_ms\": 0.0, \"path_len_m\": 90, \"net_disp_m\": 25, \"closing_rate_30m_ms\": 0.0, \"closing_rate_60m_ms\": 0.0, \"heading_deg\": null, \"heading_compass\": null, \"bearing_to_base_deg\": 102, \"heading_vs_base_deg\": null, \"base_sweep_deg\": 0, \"eta_to_base_min\": null, \"moving_now\": false, \"stopped_minutes_total\": 120, \"stops\": [{\"start\": \"09:10\", \"end\": \"11:10\", \"minutes\": 120, \"dist_to_base_m\": 3602}], \"moving_together_with\": []}",
+   "t": 1790443911.4188318
+  },
+  {
+   "kind": "tool_call",
+   "title": "view_region",
+   "detail": {
+    "question": "Bu araç gerçekten kamyon mu, pickup/van mı? Yükü veya örtüsü var mı, duruyor mu hareket ediyor mu?",
+    "target": "D4"
+   },
+   "t": 1790443911.4188411
+  },
+  {
+   "kind": "tool_result",
+   "title": "view_region",
+   "detail": "{\"target\": \"D4\", \"note\": \"Yakın plan bir sonraki mesajda; hedef görüntünün merkezinde.\"}",
+   "t": 1790443911.431511
+  },
+  {
+   "kind": "tool_call",
+   "title": "view_region",
+   "detail": {
+    "question": "Bu kenardaki düşük güvenli kutu gerçek bir araç mı, yoksa ağaç/gölge gibi yanlış alarm mı?",
+    "target": "D8"
+   },
+   "t": 1790443911.4315321
+  },
+  {
+   "kind": "tool_result",
+   "title": "view_region",
+   "detail": "{\"target\": \"D8\", \"note\": \"Yakın plan bir sonraki mesajda; hedef görüntünün merkezinde.\"}",
+   "t": 1790443911.440375
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "D4: white pickup with open bed, stopped next to black car at stop line. Suspicious pair stopped on highway? T0074 was stopped 09:10–10:45 at 942 m from base, then drove to here (3562 m) — wait, dist to base increased, moving away from base. T0074 traveled from near base out to this location, moving NW heading 328, base bearing 101, so heading away from base. Actually it stopped 95 min near base then moved out. Now at 11:10 D1/T0074 and D4/T0120 stopped together at stop line. T0120 looped around (path 27 km, net disp 17 m) — circling the area near frame for 2 hours, repeated stops. Heading 211 southwest. Hmm, T0120 has path 27km but net disp 17m — it looped/circled, multiple stops at ~3549. Interesting: both vehicles stopped together in the driving lane — could be a checkpoint/rendezvous. Suspicious enough for immediate confirmation.\n\nT0223: stationary 120 min, no detection visible (at top edge, px 613,9 — partially at frame edge). R032 claims truck stationary long — T0223 could match; no visual confirmation. R017 claims 5 trucks stopped — detections show no trucks there (cars/van); contradicts.\n\nD8: view shows road/guardrail, faint white blob at right edge — ambiguous, very low conf 0.06, no track. Likely false alarm or marginal object.\n\nCheck other tracks? D2/D3/D5/D6/D7 far lane traffic — normal flow. Maybe quickly check motion of T0112/T0104 to confirm normal traffic. Also get_track_points for T0074/T0120? Motion summary suffices.\n\nShould I view D1 pair from above? Already have D4 close-up: black car and white pickup stopped side by side at stop line — consistent with \"stopped together\". This pair warrants immediate confirmation.\n\nLet me get motions for T0112, T0104, T0136, T0090, T0144 quickly to characterize traffic and check R017 claim.",
+   "t": 1790443932.5864232
+  },
+  {
+   "kind": "say",
+   "title": "Ajan",
+   "detail": "[Bu turdaki düşünce notlarım]\nD4 yakın planı: siyah sedan + beyaz kamyonet (açık kasalı pickup) duruş çizgisinde yan yana duruyor. T0074 üsten 942 m'de 95 dk durdu, sonra buraya sürüldü; T0120 ise 2 saatte 27 km yol yapıp net 17 m yer değiştirmiş (bölgede dolaşmış, aralıklı durmuş) — şimdi ikisi birlikte duruyor. Bu bir buluşma/kontrol noktası görüntüsü; teyit gerektirir. Arka şerittin normal trafik olduğunu doğrulamak için diğer kayıtlara bakıyorum.",
+   "t": 1790443932.586428
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0112"
+   },
+   "t": 1790443932.5865211
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0112\", \"start\": \"09:10\", \"end\": \"11:10\", \"dist_to_base_series\": [[\"09:10\", 7082], [\"09:25\", 7086], [\"09:40\", 5957], [\"09:55\", 7040], [\"10:10\", 7037], [\"10:25\", 5931], [\"10:40\", 5925], [\"10:55\", 5184], [\"11:10\", 3576]], \"dist_to_base_now_m\": 3576, \"start_dist_to_base_m\": 7082, \"min_dist_to_base_m\": 3576, \"min_dist_time\": \"11:10\", \"speed_last_10m_ms\": 3.0, \"speed_last_30m_ms\": 3.3, \"moving_speed_ms\": 3.9, \"path_len_m\": 9404, \"net_disp_m\": 5323, \"closing_rate_30m_ms\": 1.31, \"closing_rate_60m_ms\": 0.96, \"heading_deg\": 102, \"heading_compass\": \"doğu\", \"bearing_to_base_deg\": 102, \"heading_vs_base_deg\": 0, \"base_sweep_deg\": -47, \"eta_to_base_min\": 45.7, \"moving_now\": true, \"stopped_minutes_total\": 80, \"stops\": [{\"start\": \"09:10\", \"end\": \"09:25\", \"minutes\": 15, \"dist_to_base_m\": 7082}, {\"start\": \"09:30\", \"end\": \"09:45\", \"minutes\": 15, \"dist_to_base_m\": 5958}, {\"start\": \"09:50\", \"end\": \"10:20\", \"minutes\": 30, \"dist_to_base_m\": 7041}, {\"start\": \"10:25\", \"end\": \"10:45\", \"minutes\": 20, \"dist_to_base_m\": 5931}], \"moving_together_with\": []}",
+   "t": 1790443932.587865
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0104"
+   },
+   "t": 1790443932.587883
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0104\", \"start\": \"09:10\", \"end\": \"11:10\", \"dist_to_base_series\": [[\"09:10\", 4939], [\"09:25\", 7557], [\"09:40\", 7550], [\"09:55\", 6338], [\"10:10\", 6340], [\"10:25\", 5841], [\"10:40\", 5831], [\"10:55\", 7707], [\"11:10\", 3571]], \"dist_to_base_now_m\": 3571, \"start_dist_to_base_m\": 4939, \"min_dist_to_base_m\": 3571, \"min_dist_time\": \"11:10\", \"speed_last_10m_ms\": 6.2, \"speed_last_30m_ms\": 4.3, \"moving_speed_ms\": 7.0, \"path_len_m\": 14731, \"net_disp_m\": 3348, \"closing_rate_30m_ms\": 1.26, \"closing_rate_60m_ms\": 0.77, \"heading_deg\": 102, \"heading_compass\": \"doğu\", \"bearing_to_base_deg\": 102, \"heading_vs_base_deg\": 0, \"base_sweep_deg\": 43, \"eta_to_base_min\": 47.4, \"moving_now\": true, \"stopped_minutes_total\": 80, \"stops\": [{\"start\": \"09:20\", \"end\": \"09:40\", \"minutes\": 20, \"dist_to_base_m\": 7556}, {\"start\": \"09:45\", \"end\": \"10:20\", \"minutes\": 35, \"dist_to_base_m\": 6336}, {\"start\": \"10:25\", \"end\": \"10:50\", \"minutes\": 25, \"dist_to_base_m\": 5841}], \"moving_together_with\": []}",
+   "t": 1790443932.588809
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0136"
+   },
+   "t": 1790443932.588816
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0136\", \"start\": \"09:10\", \"end\": \"11:10\", \"dist_to_base_series\": [[\"09:10\", 7555], [\"09:25\", 7173], [\"09:40\", 7174], [\"09:55\", 5878], [\"10:10\", 5881], [\"10:25\", 7964], [\"10:40\", 7969], [\"10:55\", 6630], [\"11:10\", 3576]], \"dist_to_base_now_m\": 3576, \"start_dist_to_base_m\": 7555, \"min_dist_to_base_m\": 3576, \"min_dist_time\": \"11:10\", \"speed_last_10m_ms\": 5.3, \"speed_last_30m_ms\": 5.0, \"moving_speed_ms\": 6.3, \"path_len_m\": 15299, \"net_disp_m\": 7880, \"closing_rate_30m_ms\": 2.44, \"closing_rate_60m_ms\": 0.64, \"heading_deg\": 102, \"heading_compass\": \"doğu\", \"bearing_to_base_deg\": 102, \"heading_vs_base_deg\": 0, \"base_sweep_deg\": -82, \"eta_to_base_min\": 24.4, \"moving_now\": true, \"stopped_minutes_total\": 80, \"stops\": [{\"start\": \"09:15\", \"end\": \"09:45\", \"minutes\": 30, \"dist_to_base_m\": 7177}, {\"start\": \"09:50\", \"end\": \"10:15\", \"minutes\": 25, \"dist_to_base_m\": 5877}, {\"start\": \"10:20\", \"end\": \"10:45\", \"minutes\": 25, \"dist_to_base_m\": 7962}], \"moving_together_with\": []}",
+   "t": 1790443932.5897212
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0090"
+   },
+   "t": 1790443932.58973
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0090\", \"start\": \"09:10\", \"end\": \"11:10\", \"dist_to_base_series\": [[\"09:10\", 6072], [\"09:25\", 4088], [\"09:40\", 4093], [\"09:55\", 4093], [\"10:10\", 2359], [\"10:25\", 2356], [\"10:40\", 3565], [\"10:55\", 7600], [\"11:10\", 3564]], \"dist_to_base_now_m\": 3564, \"start_dist_to_base_m\": 6072, \"min_dist_to_base_m\": 2356, \"min_dist_time\": \"10:25\", \"speed_last_10m_ms\": 7.1, \"speed_last_30m_ms\": 4.8, \"moving_speed_ms\": 6.9, \"path_len_m\": 14642, \"net_disp_m\": 3591, \"closing_rate_30m_ms\": 0.0, \"closing_rate_60m_ms\": -0.33, \"heading_deg\": 78, \"heading_compass\": \"doğu\", \"bearing_to_base_deg\": 102, \"heading_vs_base_deg\": 24, \"base_sweep_deg\": 32, \"eta_to_base_min\": null, \"moving_now\": true, \"stopped_minutes_total\": 80, \"stops\": [{\"start\": \"09:20\", \"end\": \"10:00\", \"minutes\": 40, \"dist_to_base_m\": 4089}, {\"start\": \"10:05\", \"end\": \"10:35\", \"minutes\": 30, \"dist_to_base_m\": 2357}, {\"start\": \"10:50\", \"end\": \"11:00\", \"minutes\": 10, \"dist_to_base_m\": 7595}], \"moving_together_with\": []}",
+   "t": 1790443932.5906188
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "Far-lane vehicles T0112, T0104, T0136 heading east toward base (bearing 102, heading_vs_base 0), ETA 24–47 min. They're approaching the base — normal traffic on the highway toward base, but T0136 ETA 24 min. Hmm, three vehicles approaching base; could warrant monitoring but it's a public highway — normal traffic. T0090 heading east too.\n\nT0074: stopped 95 min at 942 m from base (09:10–10:45), then drove out to current location, stopped with T0120. T0120 looped 27 km in area near frame with multiple stops — 2 hours of circling. The pair stopped together on the highway at the stop line.\n\nActually wait — re-check T0074: at 09:10 it was 942 m from base, stopped until 10:45, then at 10:55 was 2700 m, at 11:10 3562 m — moving away from base. Heading NW (328). So a vehicle parked near base for 95 min, then drove out and rendezvoused with T0120 which had been circling the area for 2 hours. Both now stopped side by side in the lane. That's suspicious — immediate confirmation warranted.\n\nT0223: stationary 120 min at frame top edge, no detection visible (maybe hidden behind trees / at frame edge). R032 said a truck stationary long time near 39.9285,32.81195 — T0223 is 0 m from that point. Supports R032 partially. Worth monitoring/confirming.\n\nR017 (11:05): \"5 trucks stopped\" near 39.9283,32.8120 — detections there: cars and a van, no trucks. Contradicts (class mismatch). Partially compatible in that ~6 vehicles are present there.\n\nR110: patrol radio contact lost 40 min in Bati Yerlesimi — frame is 752 m from that zone; combined with suspicious pair, raises concern. Relevant context, unverifiable.\n\nR087: unverified tip of vehicle activity last night — unverifiable/ilgisiz.\n\nR135: traffic normal — consistent with far lane flow.\n\nD8: conf 0.06, no track, view shows just road/guardrail edge with a tiny white blob — likely false alarm.\n\nActions:\n- D1 (T0074): hemen teyit/müdahale — high confidence? Evidence consistent: parked near base 95 min, drove out, now stopped side-by-side wi",
+   "t": 1790443956.393623
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0144"
+   },
+   "t": 1790443956.3937001
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0144\", \"start\": \"09:10\", \"end\": \"11:10\", \"dist_to_base_series\": [[\"09:10\", 5442], [\"09:25\", 5440], [\"09:40\", 5442], [\"09:55\", 7440], [\"10:10\", 5962], [\"10:25\", 5964], [\"10:40\", 6786], [\"10:55\", 6779], [\"11:10\", 3582]], \"dist_to_base_now_m\": 3582, \"start_dist_to_base_m\": 5442, \"min_dist_to_base_m\": 3582, \"min_dist_time\": \"11:10\", \"speed_last_10m_ms\": 5.9, \"speed_last_30m_ms\": 2.0, \"moving_speed_ms\": 6.0, \"path_len_m\": 10804, \"net_disp_m\": 3411, \"closing_rate_30m_ms\": 1.78, \"closing_rate_60m_ms\": 0.66, \"heading_deg\": 137, \"heading_compass\": \"güneydoğu\", \"bearing_to_base_deg\": 102, \"heading_vs_base_deg\": 35, \"base_sweep_deg\": -38, \"eta_to_base_min\": 33.5, \"moving_now\": true, \"stopped_minutes_total\": 90, \"stops\": [{\"start\": \"09:10\", \"end\": \"09:40\", \"minutes\": 30, \"dist_to_base_m\": 5442}, {\"start\": \"09:45\", \"end\": \"10:05\", \"minutes\": 20, \"dist_to_base_m\": 7445}, {\"start\": \"10:10\", \"end\": \"10:30\", \"minutes\": 20, \"dist_to_base_m\": 5962}, {\"start\": \"10:40\", \"end\": \"11:00\", \"minutes\": 20, \"dist_to_base_m\": 6786}], \"moving_together_with\": []}",
+   "t": 1790443956.395334
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "All data gathered. Now assess:\n\nForeground pair D1/T0074 (black car) + D4/T0120 (white pickup) stopped side-by-side in driving lane at stop line:\n- T0074: parked 95 min at 942 m from base (surveillance?), then drove 2.6+ km out to this point, now stopped with T0120.\n- T0120: circled area for 2h, 27 km path, net 17 m displacement, repeated stops — loitering.\n- Pair rendezvous on highway → suspicious, immediate confirmation.\n\nBackground lane: T0112, T0104, T0136, T0090, T0144 heading east (toward base), ETAs 24–47 min, normal traffic — monitor.\n\nT0223: stationary 120 min at frame top, no detection visible, corroborates R032 partially — monitor/confirm.\n\nD7 conf 0.16 paired with T0144 which is a moving vehicle — fine. D8 conf 0.06 no track, right edge — likely false alarm, no action. T0205 just outside frame — monitor.\n\nReports:\n- R017: \"5 kamyon durdu\" — detections show cars/van, no trucks → partially compatible/contradicts. I'd say \"kısmen uyumlu\" — vehicles present but class/count mismatch. Actually says 5 trucks; we see 6 vehicles, none trucks. Partially compatible.\n- R032: truck stationary long — T0223 stationary 120 min at that point, but no visual detection (can't confirm truck) → \"kısmen uyumlu\" or \"doğrulanamaz\". T0223 is a track only, class unknown → \"kısmen uyumlu\" seems fair: a stationary object/track exists at that point but truck identity unverified.\n- R110: patrol radio contact lost in Bati Yerlesimi — frame 752 m from that zone; not directly verifiable from frame → \"ilgisiz\"/\"doğrulanamaz\". I'll mark doğrulanamaz.\n- R135: traffic flow normal in Bati Yerlesimi — far lane traffic is flowing normally, but zone is different. Mark \"doğrulanamaz\" or \"ilgisiz\". Frame shows normal traffic, but zone-specific claim unverifiable → doğrulanamaz.\n- R087: unverified tip of vehicle movement last night in Bati Yerlesimi — cannot verify from frame (last night) → doğrulanamaz/ilgisiz. Mark \"doğrulanamaz\".\n\nGeneral action: hemen teyit/müdahale (for D1/D4 pair).\n\nVehicles ",
+   "t": 1790444013.132763
+  },
+  {
+   "kind": "say",
+   "title": "Ajan",
+   "detail": "Tüm veriler toplandı. Değerlendirme:",
+   "t": 1790444013.132771
+  },
+  {
+   "kind": "warn",
+   "title": "Geçersiz değerlendirme",
+   "detail": "reports: her öğede rid (ör. R125) zorunlu",
+   "t": 1790444013.133062
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "rid format — maybe must be numeric like \"125\"? The example says (ör. R125). I used R017 etc. Maybe the issue is my JSON had escaped unicode? The error says rid required in each item — I did include rid. Perhaps the escaping \"\\u0130\" broke parsing? Actually I wrote raw escapes; the parser should decode. Hmm, error might be because reports array items failed to parse... I did include \"rid\". Let me retype plainly without unicode escapes.",
+   "t": 1790444044.713469
+  },
+  {
+   "kind": "final",
+   "title": "Değerlendirme",
+   "detail": {
+    "action": "hemen teyit/müdahale",
+    "brief": "Karede öndeki şeritte yan yana duran iki araç öne çıkıyor: siyah sedan (D1/T0074) ve beyaz açık kasalı kamyonet (D4/T0120). T0074 saat 09:10–10:45 arasında üsten 942 m uzakta 95 dk bekledi, sonra buraya sürüldü; T0120 ise 2 saatte 27.195 m yol yapıp net 17 m yer değiştirmiş — bölgede duraklamalı dolaşmış. İkisi şu an duruş çizgisinde yan yana duruyor; buluşma şüphesi var, birim gönderilip kimlik teyidi istenmeli. Arka şeritte T0112, T0104, T0136, T0090, T0144 üsse doğru doğu yönünde akan normal trafik (varış tahmini 24–47 dk). Kare üst kenarındaki T0223 120 dakikadır hareketsiz (tespit yok, kayıt var) — R032'nin 'uzun süredir hareketsiz kamyon' iddiasıyla konum olarak uyumlu ama sınıf görüntüyle doğrulanamıyor. R017'nin '5 kamyon durdu' iddiası tespitlerle çelişiyor: o noktada otomobil/van var, kamyon yok. D8 (güven 0.06, kayıt yok) kenarda soluk leke; yanlış alarm olasılığı yüksek.",
+    "headline": "Üs yolu üzerinde yan yana duran şüpheli araç ikilisi (T0074+T0120) teyit edilmeli; arka şeritteki trafik normal.",
+    "reports": [
+     {
+      "assessment": "kısmen uyumlu",
+      "reason": "Noktada gerçekten ~6 araç var/duruyor, ancak hiçbiri kamyon değil; tespitler otomobil ve van gösteriyor (D1-D7). Sınıf ve sayı iddiası tespitlerle çelişiyor.",
+      "rid": "R017"
+     },
+     {
+      "assessment": "kısmen uyumlu",
+      "reason": "Verilen noktada T0223 kaydı 120 dk hareketsiz duruyor ve karede tespit yok; ancak aracın kamyon olduğu görüntüyle doğrulanamıyor.",
+      "rid": "R032"
+     },
+     {
+      "assessment": "doğrulanamaz",
+      "reason": "Bati Yerlesimi devriyesiyle telsiz bağlantısı kaybı kare içinden doğrulanamaz; kare bölgeye 752 m uzakta ve telsiz durumunu gösteren veri yok.",
+      "rid": "R110"
+     },
+     {
+      "assessment": "doğrulanamaz",
+      "reason": "Karedeki arka şerit akışı düzenli ancak rapor Bati Yerlesimi bölgesine ait; kare bölgenin 752 m dışında, bölge içi durum doğrulanamaz.",
+      "rid": "R135"
+     },
+     {
+      "assessment": "doğrulanamaz",
+      "reason": "Dün geceye ait doğrulanmamış ihbar; 11:10 karesi ve 2 saatlik hareket kayıtlarıyla karşılaştırılamaz.",
+      "rid": "R087"
+     }
+    ],
+    "uncertainties": [
+     "T0223 görüntüde tespit edilemedi (kare üst kenarı); uzun süredir duran aracın sınıfı ve varlığı doğrulanamıyor.",
+     "D8 (güven 0.06) kenarda çok soluk; yanlış alarm olası ama kesin dışlanamadı.",
+     "T0120'un 2 saatlik duraklamalı dolaşması farklı açıklamalara açık; ikili duruş buluşma şüphesini güçlendiriyor ama niyet belirsiz.",
+     "T0074'ün üs yakınındaki 95 dakikalık bekleyişi farklı amaçlara bağlanabilir; kare dışı davranış hakkında ek veri yok."
+    ],
+    "vehicles": [
+     {
+      "action": "hemen teyit/müdahale",
+      "confidence": "yüksek",
+      "evidence": [
+       "D1 conf 0.92, T0074 ile 0.0 m eşleşti",
+       "T0074: 09:10-10:45 arası 942 m'de 95 dk duraklama",
+       "T0074: 10:55-11:10 arasında 2700→3562 m'ye sürüldü",
+       "Yakın plan: siyah sedan, duruş çizgisinde T0120 ile bitişik"
+      ],
+      "id": "D1",
+      "reason": "Üsten 942 m uzakta 95 dk bekleyen araç, çıkış rotası üzerinde T0120 ile yan yana durmak üzere buraya sürüldü; davranış örgütlü buluşma izlenimi veriyor, kimlik teyidi şart.",
+      "track_id": "T0074"
+     },
+     {
+      "action": "hemen teyit/müdahale",
+      "confidence": "yüksek",
+      "evidence": [
+       "D4 conf 0.76, T0120 ile 0.1 m eşleşti",
+       "T0120: path_len 27195 m, net_disp 17 m",
+       "T0120: 4 ayrı duraklama, toplam 60 dk",
+       "Yakın plan: beyaz açık kasalı kamyonet, D1'e bitişik duruyor"
+      ],
+      "id": "D4",
+      "reason": "2 saat boyunca bölgede 27 km yol yapıp net 17 m yer değiştiren, aralıklı duraklamalar yapan araç; şimdi T0074 ile birlikte şeritte duruyor. Dolaşma+duruşma deseni şüpheli.",
+      "track_id": "T0120"
+     },
+     {
+      "action": "izlemeye al",
+      "confidence": "düşük",
+      "evidence": [
+       "R032 noktası ile 0 m",
+       "stops: 09:10-11:10, 120 dk",
+       "Nokta çevresinde tespit yok"
+      ],
+      "id": "T0223",
+      "reason": "Kare üst kenarında 120 dakikadır hareketsiz, görüntüde tespit yok (kenar/ağaç altında olabilir). R032 ile konum olarak uyumlu; sınıf doğrulanamadığı için izlenmeli.",
+      "track_id": "T0223"
+     },
+     {
+      "action": "izlemeye al",
+      "confidence": "yüksek",
+      "evidence": [
+       "D2 conf 0.82, T0112 eşleşti",
+       "heading 102°, bearing_to_base 102°, eta 45.7 dk"
+      ],
+      "id": "D2",
+      "reason": "Üsse doğru (doğu) yaklaşan sıradan trafik; ETA ~46 dk. Sonraki karelerde izlenmeli.",
+      "track_id": "T0112"
+     },
+     {
+      "action": "izlemeye al",
+      "confidence": "yüksek",
+      "evidence": [
+       "D3 conf 0.78, T0104 eşleşti",
+       "heading_vs_base 0°, eta 47.4 dk"
+      ],
+      "id": "D3",
+      "reason": "Üsse doğru akan olağan trafik; izlenmeli.",
+      "track_id": "T0104"
+     },
+     {
+      "action": "izlemeye al",
+      "confidence": "yüksek",
+      "evidence": [
+       "D5 conf 0.63, T0136 eşleşti",
+       "heading_vs_base 0°, eta 24.4 dk"
+      ],
+      "id": "D5",
+      "reason": "Üsse doğru en hızlı yaklaşan araç (ETA ~24 dk); olağan trafik ama yakın varış nedeniyle izlenmeli.",
+      "track_id": "T0136"
+     },
+     {
+      "action": "izlemeye al",
+      "confidence": "yüksek",
+      "evidence": [
+       "D6 conf 0.53, T0090 eşleşti",
+       "heading 78°, base_sweep 32°"
+      ],
+      "id": "D6",
+      "reason": "Doğu yönünde akan trafik; üsse yaklaşma hızı 0, tehdit göstergesi yok.",
+      "track_id": "T0090"
+     },
+     {
+      "action": "izlemeye al",
+      "confidence": "düşük",
+      "evidence": [
+       "D7 conf 0.159 (düşük güven)",
+       "T0144 heading_vs_base 35°, eta 33.5 dk"
+      ],
+      "id": "D7",
+      "reason": "Tespit güveni düşük (0.16) ama T0144 hareket kaydıyla eşleşti ve kayıt üsse doğru gidiyor; araç gerçek görünüyor, takip yeterli.",
+      "track_id": "T0144"
+     },
+     {
+      "action": "işlem gerekmez",
+      "confidence": "düşük",
+      "evidence": [
+       "D8 conf 0.062",
+       "match_tracks: eşleşen kayıt yok",
+       "Yakın plan: yol/bariyer, net araç görünmüyor"
+      ],
+      "id": "D8",
+      "reason": "Güven 0.06, hareket kaydı yok, yakın planda net araç görünmüyor; yanlış alarm olasılığı yüksek.",
+      "track_id": null
+     }
+    ]
+   },
+   "t": 1790444044.713653
+  }
+ ],
+ "usage": {
+  "calls": 6,
+  "prompt_tokens": 62365,
+  "completion_tokens": 7290,
+  "reasoning_tokens": 2497,
+  "seconds": 154.1
+ },
+ "effort": "high",
+ "mode": "action",
+ "model": "glm-5.3-flash",
+ "created": 1790444044.713666
+}

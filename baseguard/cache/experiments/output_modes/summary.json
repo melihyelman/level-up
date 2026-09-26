@@ -1,0 +1,35 @@
+{
+ "levels": {
+  "runs": 12,
+  "errors": [],
+  "vehicle_agreement": 0.676,
+  "frame_agreement": "5/6",
+  "coverage": 0.927,
+  "validation_retries": 14,
+  "avg_seconds": 158.8,
+  "avg_prompt_tokens": 51341,
+  "avg_reasoning_tokens": 2410
+ },
+ "binary": {
+  "runs": 12,
+  "errors": [],
+  "vehicle_agreement": 0.649,
+  "frame_agreement": "6/6",
+  "coverage": 1.0,
+  "validation_retries": 17,
+  "avg_seconds": 189.3,
+  "avg_prompt_tokens": 55515,
+  "avg_reasoning_tokens": 3130
+ },
+ "action": {
+  "runs": 12,
+  "errors": [],
+  "vehicle_agreement": 0.459,
+  "frame_agreement": "5/6",
+  "coverage": 1.0,
+  "validation_retries": 16,
+  "avg_seconds": 154.3,
+  "avg_prompt_tokens": 56490,
+  "avg_reasoning_tokens": 2211
+ }
+}

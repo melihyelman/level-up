@@ -1,0 +1,5 @@
+ultralytics>=8.4.0
+ensemble-boxes>=1.0.9
+opencv-python-headless
+pandas
+numpy

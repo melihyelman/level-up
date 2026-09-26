@@ -1,0 +1,16 @@
+# python 3.12 (torch/ultralytics do not support 3.14 yet)
+torch
+torchvision
+ultralytics>=8.4.0
+ensemble-boxes>=1.0.9
+opencv-python-headless
+numpy
+pandas
+scipy
+openai
+python-dotenv
+streamlit
+plotly
+pytest
+fastapi
+uvicorn[standard]

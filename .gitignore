@@ -1,0 +1,9 @@
+.venv/
+.env
+__pycache__/
+cache/briefs/
+cache/llm_usage.jsonl
+cache/*.log
+web/node_modules/
+web/dist/
+.claude

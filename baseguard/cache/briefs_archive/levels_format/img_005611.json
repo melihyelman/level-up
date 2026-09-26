@@ -1,0 +1,353 @@
+{
+ "image_id": "img_005611",
+ "brief": {
+  "brief": "Karede 4 araç (3 car, 1 van), tamamı hareket kayıtlarıyla birebir eşleşti (0,1-0,4 m). T0106 (D4, van) ve T0207 (kare dışı, 15 m) üsse doğru seyrediyor, ETA ~46-48 dk; T0093 (D2) üs yakınından (632 m) uzaklaşıyor. T0123 ve T0038 üsten uzaklaşıyor (heading-base farkı ~130-139°). R070'in 'üzeri örtülü ağır araç' iddiası D2 yakın plan görüntüsüyle (düz binek, örtü yok) doğrulanamadı.",
+  "headline": "Üsse yaklaşan iki araç (T0106, T0207) dikkat gerektiriyor; R070'in örtülü ağır araç iddiası doğrulanamıyor.",
+  "overall_level": "DİKKAT",
+  "reports": [
+   {
+    "assessment": "doğrulanamaz",
+    "reason": "Koordinatı kare içinde (D2/T0093'e 46 m) ancak yakın planda düz binek otomobil görünüyor; örtülü ağır araç yok.",
+    "rid": "R070"
+   }
+  ],
+  "uncertainties": [
+   "T0123 ve T0106 kayıtları 'moving_now' gösteriyor ancak görüntüde D1 ve D4 park halinde; çekim anında az önce durmuş olabilirler.",
+   "T0207'nin kareye girmesi sonraki karelerle teyit edilmeli.",
+   "R070 üçüncü taraf kaynağı, doğrulama imkânı yok."
+  ],
+  "vehicles": [
+   {
+    "evidence": [
+     "D4",
+     "T0106",
+     "heading 77° doğu, bearing_to_base 77°, fark 0°",
+     "ETA 46,4 dk",
+     "speed_last_10m 3,6 m/s"
+    ],
+    "id": "D4",
+    "level": "DİKKAT",
+    "reason": "Van, doğuya tam üs istikametinde (heading-base farkı 0°), üsse yaklaşma hızı pozitif, ETA ~46 dk; hareket geçmişinde uzun duraklamalar var.",
+    "track_id": "T0106"
+   },
+   {
+    "evidence": [
+     "T0207",
+     "heading 46° KD, bearing 77°, fark 30°",
+     "ETA 48,4 dk",
+     "dist_outside_frame_m 15"
+    ],
+    "id": "T0207",
+    "level": "DİKKAT",
+    "reason": "Karenin 15 m dışında, kuzeydoğuya üsse doğru seyrediyor (fark 30°), ETA ~48 dk; karede tespiti yok, sonraki karelerde teyit edilmeli.",
+    "track_id": "T0207"
+   },
+   {
+    "evidence": [
+     "D2",
+     "T0093",
+     "min_dist 623 m (12:35)",
+     "heading 203° GB, fark 125°",
+     "view_region: örtüsüz binek"
+    ],
+    "id": "D2",
+    "level": "İZLE",
+    "reason": "Üs yakınından (632 m) uzaklaşıyor (heading-base farkı 125°); şu an tehdit yok ama yakın geçmişte üse 623 m kadar yaklaşmış.",
+    "track_id": "T0093"
+   },
+   {
+    "evidence": [
+     "D1",
+     "T0123",
+     "heading 299°, fark 139°",
+     "moving_speed 7,6 m/s",
+     "stops: 85 dk toplam"
+    ],
+    "id": "D1",
+    "level": "İZLE",
+    "reason": "Üsten uzaklaşıyor (fark ~139°), son 10 dk 7,6 m/s ile hareketliydi, kare anında park pozisyonunda; kimlik eşleşmesi 0,2 m ile güvenilir.",
+    "track_id": "T0123"
+   },
+   {
+    "evidence": [
+     "D3",
+     "T0038",
+     "heading 308°, fark 130°",
+     "moving_speed 7,3 m/s"
+    ],
+    "id": "D3",
+    "level": "NORMAL",
+    "reason": "Üsten uzaklaşıyor (fark ~130°), 7,3 m/s seyir hızı; dikkat gerektirmiyor.",
+    "track_id": "T0038"
+   }
+  ]
+ },
+ "trace": [
+  {
+   "kind": "user",
+   "title": "Görev",
+   "detail": "img_005611 karesini değerlendir.",
+   "t": 1790441983.8646772
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "Start: image info + detect + reports + match tracks.",
+   "t": 1790441988.980809
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_image_info",
+   "detail": {},
+   "t": 1790441988.980881
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_image_info",
+   "detail": "{\"image_id\": \"img_005611\", \"capture_time\": \"13:45\", \"width_px\": 1360, \"height_px\": 765, \"corners\": {\"top_left\": [39.913745, 32.802163], \"top_right\": [39.913745, 32.804111], \"bottom_left\": [39.912905, 32.802163], \"bottom_right\": [39.912905, 32.804111]}, \"center\": [39.913325, 32.803137], \"footprint_m\": [166, 93], \"m_per_px\": 0.122, \"nearest_zone\": \"Bati Yerlesimi\", \"zone_dist_m\": 1422, \"base\": {\"name\": \"Merkez Us\", \"lat\": 39.92184, \"lon\": 32.85306}, \"dist_to_base_m\": 4362, \"direction_from_base\": \"batı\"}",
+   "t": 1790441988.981119
+  },
+  {
+   "kind": "tool_call",
+   "title": "detect_vehicles",
+   "detail": {},
+   "t": 1790441988.981128
+  },
+  {
+   "kind": "tool_result",
+   "title": "detect_vehicles",
+   "detail": "{\"model\": \"full-blend (cached)\", \"min_conf\": 0.05, \"count\": 4, \"detections\": [{\"id\": \"D1\", \"cls\": \"car\", \"conf\": 0.9215, \"box_xywh\": [0.1, 634.9, 149.3, 123.3], \"center_px\": [75, 697], \"lat\": 39.91298, \"lon\": 32.80227, \"dist_to_base_m\": 4442}, {\"id\": \"D2\", \"cls\": \"car\", \"conf\": 0.8963, \"box_xywh\": [1118.7, 331.5, 106.4, 51.4], \"center_px\": [1172, 357], \"lat\": 39.913353, \"lon\": 32.803842, \"dist_to_base_m\": 4302}, {\"id\": \"D3\", \"cls\": \"car\", \"conf\": 0.8687, \"box_xywh\": [1169.8, 176.0, 55.6, 46.2], \"center_px\": [1198, 199], \"lat\": 39.913526, \"lon\": 32.803878, \"dist_to_base_m\": 4295}, {\"id\": \"D4\", \"cls\": \"van\", \"conf\": 0.8017, \"box_xywh\": [53.4, 432.6, 130.5, 98.4], \"center_px\": [119, 482], \"lat\": 39.913216, \"lon\": 32.802333, \"dist_to_base_m\": 4431}], \"note\": \"Kutuların çizili hali bir sonraki mesajda (kesikli kutu = güven < 0.3).\"}",
+   "t": 1790441989.00271
+  },
+  {
+   "kind": "tool_call",
+   "title": "match_tracks",
+   "detail": {},
+   "t": 1790441989.0027268
+  },
+  {
+   "kind": "tool_result",
+   "title": "match_tracks",
+   "detail": "{\"capture_time\": \"13:45\", \"tracks_ending_at_capture\": 5, \"gate_m\": 8.0, \"matches\": [{\"detection\": \"D1\", \"cls\": \"car\", \"conf\": 0.9215, \"track_id\": \"T0123\", \"dist_m\": 0.2, \"second_nearest\": {\"track_id\": \"T0106\", \"dist_m\": 26.7}}, {\"detection\": \"D2\", \"cls\": \"car\", \"conf\": 0.8963, \"track_id\": \"T0093\", \"dist_m\": 0.4, \"second_nearest\": {\"track_id\": \"T0038\", \"dist_m\": 19.6}}, {\"detection\": \"D3\", \"cls\": \"car\", \"conf\": 0.8687, \"track_id\": \"T0038\", \"dist_m\": 0.1, \"second_nearest\": {\"track_id\": \"T0093\", \"dist_m\": 19.5}}, {\"detection\": \"D4\", \"cls\": \"van\", \"conf\": 0.8017, \"track_id\": \"T0106\", \"dist_m\": 0.1, \"second_nearest\": {\"track_id\": \"T0123\", \"dist_m\": 27.0}}], \"tracks_in_frame_without_detection\": [], \"tracks_just_outside_frame\": [{\"track_id\": \"T0207\", \"dist_outside_frame_m\": 15}]}",
+   "t": 1790441989.002793
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_reports",
+   "detail": {},
+   "t": 1790441989.0027971
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_reports",
+   "detail": "{\"capture_time\": \"13:45\", \"window\": \"çekimden 180 dk önce – 30 dk sonra\", \"radius_m\": 250.0, \"frame_detection_counts\": {\"car\": {\"conf>=0.3\": 3, \"conf<0.3\": 0}, \"van\": {\"conf>=0.3\": 1, \"conf<0.3\": 0}}, \"reports\": [{\"rid\": \"R070\", \"time\": \"12:50\", \"source\": \"third_party\", \"text\": \"39.91309N 32.80343E konumunda uzeri ortulu bir agir arac bekliyor.\", \"scope\": \"koordinat\", \"minutes_before_capture\": 55, \"point\": [39.91309, 32.80343], \"point_decimals\": 5, \"point_px\": [885, 597], \"dist_point_to_frame_m\": 0, \"within_60m_of_point\": [{\"id\": \"D2\", \"cls\": \"car\", \"conf\": 0.8963, \"dist_m\": 46, \"track_id\": \"T0093\"}]}]}",
+   "t": 1790441989.005238
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "Check motions of T0123, T0093, T0038, T0106, and T0207 (outside frame). Also view_region for D2 (covered vehicle report nearby).",
+   "t": 1790441995.860032
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0123"
+   },
+   "t": 1790441995.860095
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0123\", \"start\": \"11:45\", \"end\": \"13:45\", \"dist_to_base_series\": [[\"11:45\", 5449], [\"12:00\", 5092], [\"12:15\", 5097], [\"12:30\", 5091], [\"12:45\", 7045], [\"13:00\", 7044], [\"13:15\", 4165], [\"13:30\", 4157], [\"13:45\", 4442]], \"dist_to_base_now_m\": 4442, \"start_dist_to_base_m\": 5449, \"min_dist_to_base_m\": 3122, \"min_dist_time\": \"13:40\", \"speed_last_10m_ms\": 7.6, \"speed_last_30m_ms\": 3.6, \"moving_speed_ms\": 7.6, \"path_len_m\": 15972, \"net_disp_m\": 8509, \"closing_rate_30m_ms\": -0.15, \"closing_rate_60m_ms\": 0.72, \"heading_deg\": 299, \"heading_compass\": \"kuzeybatı\", \"bearing_to_base_deg\": 77, \"heading_vs_base_deg\": 139, \"base_sweep_deg\": 118, \"eta_to_base_min\": null, \"moving_now\": true, \"stopped_minutes_total\": 85, \"stops\": [{\"start\": \"11:45\", \"end\": \"11:55\", \"minutes\": 10, \"dist_to_base_m\": 5449}, {\"start\": \"12:00\", \"end\": \"12:40\", \"minutes\": 40, \"dist_to_base_m\": 5092}, {\"start\": \"12:45\", \"end\": \"13:00\", \"minutes\": 15, \"dist_to_base_m\": 7045}, {\"start\": \"13:10\", \"end\": \"13:30\", \"minutes\": 20, \"dist_to_base_m\": 4165}], \"moving_together_with\": []}",
+   "t": 1790441995.861395
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0093"
+   },
+   "t": 1790441995.861415
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0093\", \"start\": \"11:45\", \"end\": \"13:45\", \"dist_to_base_series\": [[\"11:45\", 632], [\"12:00\", 626], [\"12:15\", 627], [\"12:30\", 623], [\"12:45\", 629], [\"13:00\", 767], [\"13:15\", 3560], [\"13:30\", 3559], [\"13:45\", 4302]], \"dist_to_base_now_m\": 4302, \"start_dist_to_base_m\": 632, \"min_dist_to_base_m\": 623, \"min_dist_time\": \"12:35\", \"speed_last_10m_ms\": 3.0, \"speed_last_30m_ms\": 1.6, \"moving_speed_ms\": 2.7, \"path_len_m\": 5825, \"net_disp_m\": 3843, \"closing_rate_30m_ms\": -0.41, \"closing_rate_60m_ms\": -1.02, \"heading_deg\": 203, \"heading_compass\": \"güneybatı\", \"bearing_to_base_deg\": 77, \"heading_vs_base_deg\": 125, \"base_sweep_deg\": -40, \"eta_to_base_min\": null, \"moving_now\": true, \"stopped_minutes_total\": 85, \"stops\": [{\"start\": \"11:45\", \"end\": \"12:55\", \"minutes\": 70, \"dist_to_base_m\": 632}, {\"start\": \"13:15\", \"end\": \"13:30\", \"minutes\": 15, \"dist_to_base_m\": 3560}], \"moving_together_with\": []}",
+   "t": 1790441995.862284
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0038"
+   },
+   "t": 1790441995.862296
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0038\", \"start\": \"11:45\", \"end\": \"13:45\", \"dist_to_base_series\": [[\"11:45\", 5012], [\"12:00\", 4999], [\"12:15\", 4993], [\"12:30\", 7045], [\"12:45\", 5327], [\"13:00\", 5324], [\"13:15\", 7741], [\"13:30\", 3721], [\"13:45\", 4295]], \"dist_to_base_now_m\": 4295, \"start_dist_to_base_m\": 5012, \"min_dist_to_base_m\": 3314, \"min_dist_time\": \"13:40\", \"speed_last_10m_ms\": 7.6, \"speed_last_30m_ms\": 4.9, \"moving_speed_ms\": 7.3, \"path_len_m\": 15490, \"net_disp_m\": 6868, \"closing_rate_30m_ms\": 1.91, \"closing_rate_60m_ms\": 0.29, \"heading_deg\": 308, \"heading_compass\": \"kuzeybatı\", \"bearing_to_base_deg\": 78, \"heading_vs_base_deg\": 130, \"base_sweep_deg\": 95, \"eta_to_base_min\": 37.4, \"moving_now\": true, \"stopped_minutes_total\": 85, \"stops\": [{\"start\": \"11:45\", \"end\": \"12:20\", \"minutes\": 35, \"dist_to_base_m\": 5012}, {\"start\": \"12:25\", \"end\": \"12:40\", \"minutes\": 15, \"dist_to_base_m\": 7046}, {\"start\": \"12:45\", \"end\": \"13:10\", \"minutes\": 25, \"dist_to_base_m\": 5327}, {\"start\": \"13:25\", \"end\": \"13:35\", \"minutes\": 10, \"dist_to_base_m\": 3719}], \"moving_together_with\": []}",
+   "t": 1790441995.8629959
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0106"
+   },
+   "t": 1790441995.863001
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0106\", \"start\": \"11:45\", \"end\": \"13:45\", \"dist_to_base_series\": [[\"11:45\", 7360], [\"12:00\", 7357], [\"12:15\", 6344], [\"12:30\", 6344], [\"12:45\", 6341], [\"13:00\", 7298], [\"13:15\", 7297], [\"13:30\", 7053], [\"13:45\", 4431]], \"dist_to_base_now_m\": 4431, \"start_dist_to_base_m\": 7360, \"min_dist_to_base_m\": 4431, \"min_dist_time\": \"13:45\", \"speed_last_10m_ms\": 3.6, \"speed_last_30m_ms\": 2.0, \"moving_speed_ms\": 3.3, \"path_len_m\": 6061, \"net_disp_m\": 2963, \"closing_rate_30m_ms\": 1.59, \"closing_rate_60m_ms\": 0.53, \"heading_deg\": 77, \"heading_compass\": \"doğu\", \"bearing_to_base_deg\": 77, \"heading_vs_base_deg\": 0, \"base_sweep_deg\": -5, \"eta_to_base_min\": 46.4, \"moving_now\": true, \"stopped_minutes_total\": 90, \"stops\": [{\"start\": \"11:45\", \"end\": \"12:10\", \"minutes\": 25, \"dist_to_base_m\": 7360}, {\"start\": \"12:15\", \"end\": \"12:45\", \"minutes\": 30, \"dist_to_base_m\": 6344}, {\"start\": \"12:50\", \"end\": \"13:25\", \"minutes\": 35, \"dist_to_base_m\": 7296}], \"moving_together_with\": []}",
+   "t": 1790441995.863595
+  },
+  {
+   "kind": "tool_call",
+   "title": "get_motion",
+   "detail": {
+    "track_id": "T0207"
+   },
+   "t": 1790441995.863604
+  },
+  {
+   "kind": "tool_result",
+   "title": "get_motion",
+   "detail": "{\"track_id\": \"T0207\", \"start\": \"11:45\", \"end\": \"13:45\", \"dist_to_base_series\": [[\"11:45\", 7545], [\"12:00\", 6756], [\"12:15\", 6754], [\"12:30\", 7547], [\"12:45\", 6659], [\"13:00\", 6656], [\"13:15\", 6922], [\"13:30\", 6923], [\"13:45\", 4274]], \"dist_to_base_now_m\": 4274, \"start_dist_to_base_m\": 7545, \"min_dist_to_base_m\": 4274, \"min_dist_time\": \"13:45\", \"speed_last_10m_ms\": 3.0, \"speed_last_30m_ms\": 1.6, \"moving_speed_ms\": 3.1, \"path_len_m\": 7487, \"net_disp_m\": 3760, \"closing_rate_30m_ms\": 1.47, \"closing_rate_60m_ms\": 0.66, \"heading_deg\": 46, \"heading_compass\": \"kuzeydoğu\", \"bearing_to_base_deg\": 77, \"heading_vs_base_deg\": 30, \"base_sweep_deg\": 19, \"eta_to_base_min\": 48.4, \"moving_now\": true, \"stopped_minutes_total\": 80, \"stops\": [{\"start\": \"11:50\", \"end\": \"12:20\", \"minutes\": 30, \"dist_to_base_m\": 6755}, {\"start\": \"12:25\", \"end\": \"12:40\", \"minutes\": 15, \"dist_to_base_m\": 7547}, {\"start\": \"12:45\", \"end\": \"13:00\", \"minutes\": 15, \"dist_to_base_m\": 6659}, {\"start\": \"13:10\", \"end\": \"13:30\", \"minutes\": 20, \"dist_to_base_m\": 6922}], \"moving_together_with\": []}",
+   "t": 1790441995.864289
+  },
+  {
+   "kind": "tool_call",
+   "title": "view_region",
+   "detail": {
+    "question": "Üzeri örtülü ağır araç var mı, D2 ne durumda?",
+    "target": "D2"
+   },
+   "t": 1790441995.864306
+  },
+  {
+   "kind": "tool_result",
+   "title": "view_region",
+   "detail": "{\"target\": \"D2\", \"note\": \"Yakın plan bir sonraki mesajda; hedef görüntünün merkezinde.\"}",
+   "t": 1790441995.872183
+  },
+  {
+   "kind": "thought",
+   "title": "Düşünce",
+   "detail": "D2 normal hatchback, örtü yok. R070 iddiası (örtülü ağır araç) doğrulanamıyor. D1 ve D4 park halinde görünüyor ama hareket kayıtları var — karede duruyorlar, ama kayıtları \"moving_now: true\" ve hızlı. Bu bir çelişki; ama mesafe eşleşmesi 0.1-0.2 m çok yakın. Görüntüde D1 ve D4 park edilmiş görünüyor. Belki de kayıtlar aynı anda bittiği için... moving_now true ama görüntüde park halinde — şüphe. Yine de eşleşme kesin. T0123 ve T0106 kare anında hız göstergesi görüntüyle çelişiyor; ama eşleşme 0.1 m, o halde araç çekim anında o noktada ve muhtemelen az önce durdu/yavaşladı. Dikkat: T0123 ve T0038 kuzeybatıya, üs yönüne değil (heading vs base 130-139° = uzaklaşan yön... bearing 77, heading 299/308, fark ~130-140°, yani esaas üsten uzaklaşıyor). T0106 ve T0207 doğuya, üsse doğru (fark 0° ve 30°), eta ~46-48 dk.\n\nT0106 van, üsse doğru seyrediyor, min dist şu an; DİKKAT. T0207 de üsse yaklaşan (kare dışında 15 m), DİKKAT. T0093 üs yakınından (632 m) uzaklaşıyor.",
+   "t": 1790442033.851251
+  },
+  {
+   "kind": "say",
+   "title": "Ajan",
+   "detail": "**Analist değerlendirmesi — img_005611 (13:45, Merkez Üs'e 4,4 km batı)**\n\n- **D1 (T0123)** ve **D4 (T0106)** görüntüde park halinde; T0123 son 10 dk 7,6 m/s hızla ilerliyordu ama kare anında durmuş görünüyor (14:10'a kadar 85 dk duraklama geçmişi var). T0106 doğuya, tam üs istikametinde (heading-base farkı 0°), ETA ~46 dk — yakından izlenmeli.\n- **D2 (T0093)**: yakın planda düz bir binek otomobil, örtü/yük yok. R070'in \"üzeri örtülü ağır araç\" iddiası bu konumla örtüşmüyor; rapor doğrulanamıyor/çelişiyor.\n- **D3 (T0038)**: kuzeybatıya, üsten uzaklaşan yönde; şu an hareketli, izleme yeterli.\n- **T0207**: karenin 15 m dışında, kuzeydoğuya üsse doğru (fark 30°), ETA ~48 dk — kareye girip girmediği izlenmeli.\n- T0123 ve T0038 üsten uzaklaşıyor (heading-base farkı ~130-139°), tehdit yok.\n\nHareket verileriyle görüntü arasında (D1/D4 park halinde ama kayıt \"moving_now\") küçük tutarsızlık var; eşleşme mesafesi 0,1-0,2 m olduğundan kimlikler güvenilir.",
+   "t": 1790442033.851257
+  },
+  {
+   "kind": "warn",
+   "title": "Geçersiz değerlendirme",
+   "detail": "reports: her öğede rid (ör. R125) zorunlu",
+   "t": 1790442033.8513558
+  },
+  {
+   "kind": "final",
+   "title": "Değerlendirme",
+   "detail": {
+    "brief": "Karede 4 araç (3 car, 1 van), tamamı hareket kayıtlarıyla birebir eşleşti (0,1-0,4 m). T0106 (D4, van) ve T0207 (kare dışı, 15 m) üsse doğru seyrediyor, ETA ~46-48 dk; T0093 (D2) üs yakınından (632 m) uzaklaşıyor. T0123 ve T0038 üsten uzaklaşıyor (heading-base farkı ~130-139°). R070'in 'üzeri örtülü ağır araç' iddiası D2 yakın plan görüntüsüyle (düz binek, örtü yok) doğrulanamadı.",
+    "headline": "Üsse yaklaşan iki araç (T0106, T0207) dikkat gerektiriyor; R070'in örtülü ağır araç iddiası doğrulanamıyor.",
+    "overall_level": "DİKKAT",
+    "reports": [
+     {
+      "assessment": "doğrulanamaz",
+      "reason": "Koordinatı kare içinde (D2/T0093'e 46 m) ancak yakın planda düz binek otomobil görünüyor; örtülü ağır araç yok.",
+      "rid": "R070"
+     }
+    ],
+    "uncertainties": [
+     "T0123 ve T0106 kayıtları 'moving_now' gösteriyor ancak görüntüde D1 ve D4 park halinde; çekim anında az önce durmuş olabilirler.",
+     "T0207'nin kareye girmesi sonraki karelerle teyit edilmeli.",
+     "R070 üçüncü taraf kaynağı, doğrulama imkânı yok."
+    ],
+    "vehicles": [
+     {
+      "evidence": [
+       "D4",
+       "T0106",
+       "heading 77° doğu, bearing_to_base 77°, fark 0°",
+       "ETA 46,4 dk",
+       "speed_last_10m 3,6 m/s"
+      ],
+      "id": "D4",
+      "level": "DİKKAT",
+      "reason": "Van, doğuya tam üs istikametinde (heading-base farkı 0°), üsse yaklaşma hızı pozitif, ETA ~46 dk; hareket geçmişinde uzun duraklamalar var.",
+      "track_id": "T0106"
+     },
+     {
+      "evidence": [
+       "T0207",
+       "heading 46° KD, bearing 77°, fark 30°",
+       "ETA 48,4 dk",
+       "dist_outside_frame_m 15"
+      ],
+      "id": "T0207",
+      "level": "DİKKAT",
+      "reason": "Karenin 15 m dışında, kuzeydoğuya üsse doğru seyrediyor (fark 30°), ETA ~48 dk; karede tespiti yok, sonraki karelerde teyit edilmeli.",
+      "track_id": "T0207"
+     },
+     {
+      "evidence": [
+       "D2",
+       "T0093",
+       "min_dist 623 m (12:35)",
+       "heading 203° GB, fark 125°",
+       "view_region: örtüsüz binek"
+      ],
+      "id": "D2",
+      "level": "İZLE",
+      "reason": "Üs yakınından (632 m) uzaklaşıyor (heading-base farkı 125°); şu an tehdit yok ama yakın geçmişte üse 623 m kadar yaklaşmış.",
+      "track_id": "T0093"
+     },
+     {
+      "evidence": [
+       "D1",
+       "T0123",
+       "heading 299°, fark 139°",
+       "moving_speed 7,6 m/s",
+       "stops: 85 dk toplam"
+      ],
+      "id": "D1",
+      "level": "İZLE",
+      "reason": "Üsten uzaklaşıyor (fark ~139°), son 10 dk 7,6 m/s ile hareketliydi, kare anında park pozisyonunda; kimlik eşleşmesi 0,2 m ile güvenilir.",
+      "track_id": "T0123"
+     },
+     {
+      "evidence": [
+       "D3",
+       "T0038",
+       "heading 308°, fark 130°",
+       "moving_speed 7,3 m/s"
+      ],
+      "id": "D3",
+      "level": "NORMAL",
+      "reason": "Üsten uzaklaşıyor (fark ~130°), 7,3 m/s seyir hızı; dikkat gerektirmiyor.",
+      "track_id": "T0038"
+     }
+    ]
+   },
+   "t": 1790442048.6315331
+  }
+ ],
+ "usage": {
+  "calls": 4,
+  "prompt_tokens": 23363,
+  "completion_tokens": 3012,
+  "reasoning_tokens": 441,
+  "seconds": 64.7
+ },
+ "effort": "low",
+ "model": "glm-5.3-flash",
+ "created": 1790442048.63154
+}
