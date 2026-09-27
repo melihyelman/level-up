@@ -1,0 +1,13 @@
+loaded night_grid8 val 186572 test 620260
+loaded carunder_tta val 152593 test 496341
+loaded patch val 110498 test 369443
+== singles
+0.8749 night_grid8
+0.8598 carunder_tta
+0.8432 patch
+== safe: 0.8806 {'night_grid8': 3, 'carunder_tta': 1, 'patch': 1} iou 0.65 avg {'car': 0.936, 'van': 0.792, 'truck': 0.866, 'bus': 0.928}
+== with_rfdetr: 0.8806 {'night_grid8': 3, 'carunder_tta': 1, 'patch': 1} iou 0.65 avg {'car': 0.936, 'van': 0.792, 'truck': 0.866, 'bus': 0.928}
+/Users/mehmet/Desktop/rocketsan/runs/09_blend/submission_blend_safe.csv none 0
+/Users/mehmet/Desktop/rocketsan/runs/09_blend/submission_blend_safe_plus_teammate.csv none 0
+/Users/mehmet/Desktop/rocketsan/runs/09_blend/submission_blend_with_rfdetr.csv none 0
+/Users/mehmet/Desktop/rocketsan/runs/09_blend/submission_blend_with_rfdetr_plus_teammate.csv none 0
