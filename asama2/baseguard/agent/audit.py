@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import re
 
-from core.scene import Scene
+from stage2.asama2.baseguard.core.scene import Scene
 
 ID_RE = re.compile(r"\b(D\d{1,2}|T\d{4}|R\d{3})\b")
 NUM_RE = re.compile(r"(?<![\d:])(\d+(?:[.,]\d+)?)\s*(km|m/s|m\b|dk\b|dakika|°)")

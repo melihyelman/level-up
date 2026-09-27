@@ -4,10 +4,11 @@ from types import SimpleNamespace as NS
 
 import pytest
 
-from agent import llm_client, runner
-from agent.audit import audit
-from core import config
-from core.scene import Scene
+from stage2.asama2.baseguard.agent import runner
+from stage2.asama2.baseguard.agent.audit import audit
+from stage2.asama2.baseguard.agent import llm_client
+from stage2.asama2.baseguard.core import config
+from stage2.asama2.baseguard.core.scene import Scene
 
 FRAME = "img_000860"
 

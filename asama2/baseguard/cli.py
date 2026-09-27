@@ -10,11 +10,11 @@ import argparse
 import json
 from concurrent.futures import ThreadPoolExecutor
 
-from agent import llm_client
-from agent.runner import DEFAULT_EFFORT, assess
-from agent.tools import ACTIONS
-from core.data import images
-from core.scene import Scene
+from stage2.asama2.baseguard.agent import llm_client
+from stage2.asama2.baseguard.agent.runner import DEFAULT_EFFORT, assess
+from stage2.asama2.baseguard.agent.tools import ACTIONS
+from stage2.asama2.baseguard.core.data import images
+from stage2.asama2.baseguard.core.scene import Scene
 
 COL = {"hemen teyit/müdahale": "\033[91m", "izlemeye al": "\033[33m", "işlem gerekmez": "\033[90m"}
 RST, B, DIM = "\033[0m", "\033[1m", "\033[2m"

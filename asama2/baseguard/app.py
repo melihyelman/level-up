@@ -12,16 +12,16 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from agent import llm_client
-from agent.chat import answer
-from agent.runner import DEFAULT_EFFORT, _normalise, _valid, actions_by_id, assess, cached
+from stage2.asama2.baseguard.agent import llm_client
+from stage2.asama2.baseguard.agent.chat import answer
+from stage2.asama2.baseguard.agent.runner import DEFAULT_EFFORT, _normalise, _valid, actions_by_id, assess, cached
 import base64
 import time
 
-from agent.tools import ACTIONS, SCHEMAS, ToolBox, submit_schema
-from core.data import images, zones
-from core.render import annotate, to_rgb
-from core.scene import Scene
+from stage2.asama2.baseguard.agent.tools import ACTIONS, SCHEMAS, ToolBox, submit_schema
+from stage2.asama2.baseguard.core.data import images, zones
+from stage2.asama2.baseguard.core.render import annotate, to_rgb
+from stage2.asama2.baseguard.core.scene import Scene
 
 st.set_page_config(page_title="BaseGuard · Üs Çevre Güvenliği", page_icon="🛡️", layout="wide")
 
@@ -416,7 +416,7 @@ if DEV:
                 try:
                     sub = json.loads(raw)
                     err = _valid(sub)
-                    from agent.audit import audit as _audit
+                    from stage2.asama2.baseguard.agent.audit import audit as _audit
                     issues = [] if err else _audit(sub, scene(sel), [])
                     if err:
                         st.error(f"Doğrulamadan geçmedi — ajana dönecek mesaj: Geçersiz: {err}. Düzeltip tekrar gönder.")

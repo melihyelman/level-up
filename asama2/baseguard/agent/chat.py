@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import json
 
-from core.scene import Scene
+from stage2.asama2.baseguard.core.scene import Scene
 from . import llm_client
 from .prompts import CHAT_SYSTEM
 from .tools import SCHEMAS, ToolBox

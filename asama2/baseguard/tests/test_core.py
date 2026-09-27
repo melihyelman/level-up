@@ -1,10 +1,10 @@
 """Measurement layer checked against the worked examples in the task brief and the live demo (img_000860)."""
 import pytest
 
-from core.data import Report
-from core.geo import Footprint
-from core.reports import locate
-from core.scene import Scene
+from stage2.asama2.baseguard.core.data import Report
+from stage2.asama2.baseguard.core.geo import Footprint
+from stage2.asama2.baseguard.core.reports import locate
+from stage2.asama2.baseguard.core.scene import Scene
 
 
 def test_pixel_to_geo_matches_brief_example():
@@ -47,7 +47,7 @@ def test_locate():
 
 
 def test_every_image_has_measurements():
-    from core.data import images
+    from stage2.asama2.baseguard.core.data import images
     for iid in images():
         s = Scene(iid)
         assert s.detections()["count"] > 0, iid

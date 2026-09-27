@@ -18,13 +18,13 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, Response, StreamingResponse
 from pydantic import BaseModel
 
-from agent import llm_client
-from agent.chat import answer
-from agent.runner import assess, cached
-from agent.tools import ACTIONS
-from core.data import images, zones
-from core.render import crop
-from core.scene import Scene
+from stage2.asama2.baseguard.agent import llm_client
+from stage2.asama2.baseguard.agent.chat import answer
+from stage2.asama2.baseguard.agent.runner import assess, cached
+from stage2.asama2.baseguard.agent.tools import ACTIONS
+from stage2.asama2.baseguard.core.data import images, zones
+from stage2.asama2.baseguard.core.render import crop
+from stage2.asama2.baseguard.core.scene import Scene
 
 import cv2
 

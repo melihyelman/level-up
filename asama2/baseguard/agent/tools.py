@@ -3,12 +3,12 @@ from __future__ import annotations
 
 import json
 
-from core import config
-from core.data import reports as all_reports, tracks
-from core.geo import haversine
-from core.render import annotate, crop, to_data_url
-from core.reports import locate
-from core.scene import Scene
+from stage2.asama2.baseguard.core import config
+from stage2.asama2.baseguard.core.data import reports as all_reports, tracks
+from stage2.asama2.baseguard.core.geo import haversine
+from stage2.asama2.baseguard.core.render import annotate, crop, to_data_url
+from stage2.asama2.baseguard.core.reports import locate
+from stage2.asama2.baseguard.core.scene import Scene
 
 ACTIONS = ["hemen teyit/müdahale", "izlemeye al", "işlem gerekmez"]   # most urgent first
 CONFIDENCE = ["yüksek", "düşük"]

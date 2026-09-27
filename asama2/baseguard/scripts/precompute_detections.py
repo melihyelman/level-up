@@ -5,8 +5,8 @@ usage: python -m scripts.precompute_detections [--mode full|fast] [--limit N]
 import argparse
 import time
 
-from core import config
-from core.detect import detect_images, save_cache, FAST_CACHE
+from stage2.asama2.baseguard.core import config
+from stage2.asama2.baseguard.core.detect import detect_images, save_cache, FAST_CACHE
 
 
 def main():

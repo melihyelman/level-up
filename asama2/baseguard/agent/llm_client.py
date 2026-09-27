@@ -10,7 +10,7 @@ from dataclasses import dataclass, field
 from dotenv import load_dotenv
 from openai import OpenAI
 
-from core import config
+from stage2.asama2.baseguard.core import config
 
 load_dotenv(config.ROOT / ".env")
 

@@ -6,8 +6,8 @@ import argparse
 import time
 from concurrent.futures import ThreadPoolExecutor
 
-from agent.runner import assess
-from core.data import images
+from stage2.asama2.baseguard.agent.runner import assess
+from stage2.asama2.baseguard.core.data import images
 
 
 def main():

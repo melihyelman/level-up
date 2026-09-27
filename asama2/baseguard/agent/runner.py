@@ -12,9 +12,9 @@ import time
 from pathlib import Path
 from typing import Callable
 
-from core import config
-from core.render import raw_frame, to_data_url
-from core.scene import Scene
+from stage2.asama2.baseguard.core import config
+from stage2.asama2.baseguard.core.render import raw_frame, to_data_url
+from stage2.asama2.baseguard.core.scene import Scene
 from . import llm_client
 from .audit import ID_RE, audit
 from .prompts import NUDGE, SYSTEM, USER_TEMPLATE

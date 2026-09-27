@@ -17,9 +17,9 @@ from concurrent.futures import ThreadPoolExecutor
 from itertools import combinations
 from pathlib import Path
 
-from agent.runner import assess
-from core import config
-from core.scene import Scene
+from stage2.asama2.baseguard.agent.runner import assess
+from stage2.asama2.baseguard.core import config
+from stage2.asama2.baseguard.core.scene import Scene
 
 ROOT = config.CACHE_DIR / "experiments"
 FRAMES = ["img_000860", "img_005788", "img_003464", "img_003189", "img_006388", "img_003880"]
